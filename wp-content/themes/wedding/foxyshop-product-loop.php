@@ -20,7 +20,7 @@ global $product, $post;
 $product = foxyshop_setup_product();
 if (!$product['hide_product']) {
 
-	echo '<li class="foxyshop_product_box">';
+	echo '<li class="foxyshop_product_box col-1-2">';
 
 	echo "TEST";
 

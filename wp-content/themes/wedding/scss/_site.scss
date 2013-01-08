@@ -61,12 +61,16 @@ a {
     display: inline-block;
     vertical-align: middle;
     text-align: left;
-    width: 62%;
-    max-width: 550px;
+    width: 75%;
+    max-width: 780px;
     font-weight: 300;
     box-shadow: 0 0 3px rgba(black, 0.35);
     padding: 50px;
     background: rgba(white, .8);
+
+    .home & {
+      max-width: 550px;
+    }
 
     body:hover & {
       @include opacity(1);
@@ -302,3 +306,11 @@ a {
   bottom: 10px;
   left: 10px;
 }
+
+
+
+
+.main-content {
+  @extend .cf;
+}
+
