@@ -24,7 +24,7 @@ if (!$product['hide_product']) {
 
 	//Show Image on Left
 	echo '<div class="foxyshop_product_image">';
-	if ($thumbnailSRC = foxyshop_get_main_image("thumbnail")) echo '<a href="' . $product['url'] . '"><img src="' . $thumbnailSRC . '" alt="' . htmlspecialchars($product['name']) . '" class="foxyshop_main_image" /></a>';
+	if ($thumbnailSRC = foxyshop_get_main_image("medium")) echo '<a href="' . $product['url'] . '"><img src="' . $thumbnailSRC . '" alt="' . htmlspecialchars($product['name']) . '" class="foxyshop_main_image" /></a>';
 	echo "</div>\n";
 
 	//Show Main Product Info
