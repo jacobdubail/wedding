@@ -10,10 +10,6 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 	global $product;
 
 	foxyshop_include('header'); 
-
-	//Write Category Title
-	echo '<h1 id="foxyshop_category_title">Products</h1>'."\n";
-
 	
 	//Run the query for all products in this category
 	global $paged, $wp_query;
