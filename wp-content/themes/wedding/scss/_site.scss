@@ -315,6 +315,7 @@ a {
 
 .main-content {
   @extend .cf;
+  margin: $baselineheight 0;
 
   img {
     max-width: 100%;
