@@ -113,9 +113,6 @@ function my_foxyshop_dequeue() {
 
 
 
-
-<?php
-
 /**
 * Title   : Aqua Resizer
 * Description : Resizes WordPress images on the fly
