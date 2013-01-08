@@ -8,6 +8,10 @@ html, body {
   height: 100%;
 //  @include transform(translateZ(0));
 }
+body {
+  font-size: 14px;
+  line-height: $baselineheight;
+}
 
 a {
   color: $heading;
