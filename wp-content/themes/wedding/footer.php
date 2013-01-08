@@ -10,7 +10,7 @@
 
   </div>
 
-  <div id="controls">
+  <!-- <div id="controls">
     <a href="#">&#9776;</a>
     <ul>
       <li title="Move slideshow left" class="left">left</li>
@@ -18,7 +18,7 @@
       <li title="Resume slideshow" class="down">down</li>
       <li title="Move slideshow right" class="right">right</li>
     </ul>
-  </div>
+  </div> -->
 
 <?php wp_footer(); ?>
 
