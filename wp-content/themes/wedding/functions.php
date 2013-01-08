@@ -104,3 +104,10 @@
 		exec( 'git pull', $out );
 		log_msg( "exec'd ", $out );
 	}
+
+
+add_action('init', 'my_foxyshop_dequeue', 11);
+function my_foxyshop_dequeue() { 
+  wp_dequeue_style('foxyshop_css'); 
+}
+
