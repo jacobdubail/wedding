@@ -311,5 +311,9 @@ a {
 
 .main-content {
   @extend .cf;
+
+  img {
+    max-width: 100%;
+  }
 }
 
