@@ -26,7 +26,6 @@ if (!$product['hide_product']) {
 	echo '<div class="foxyshop_product_image">';
 		if ( $thumbnailSRC = foxyshop_get_main_image("medium") ) {
 			$thumb = aq_resize( $thumbnailSRC, 263, 170, 1, true );
-			print_r($thumb);
 			echo '<a href="' . $product['url'] . '"><img src="' . $thumb . '" alt="' . htmlspecialchars($product['name']) . '" class="foxyshop_main_image" /></a>';
 		}
 	echo "</div>\n";
