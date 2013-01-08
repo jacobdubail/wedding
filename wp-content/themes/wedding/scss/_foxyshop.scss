@@ -3,6 +3,7 @@
 }
 
 .foxyshop_product_box {
+	margin: 0 0 $baselineheight*2;
 
 	&:nth-child(2n) {
 		position: relative;
