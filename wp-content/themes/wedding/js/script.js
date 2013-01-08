@@ -81,7 +81,8 @@ $("body").on( 'keydown', function (event) {
 $("#content_toggle").on('hover', function() {
   $("body").toggleClass('toggle_hover');  
 }).on('click', function() {
-  $(".page-wrap").toggleClass('content_toggle')
+  $(".page-wrap").toggleClass('content_toggle');
+  $(this).text('+');
 });
 
 $("#controls").on('hover', function() {
