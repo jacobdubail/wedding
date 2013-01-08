@@ -22,7 +22,7 @@ if (!$product['hide_product']) {
 
 	echo '<li class="foxyshop_product_box col-1-2">';
 
-	echo '<h2><a href="' . $product['url'] . '">' . apply_filters('the_title', $product['name']) . '</a></h2>';
+	echo '<h2><a href="' . $product['url'] . '" title="'.apply_filters('the_title', $product['name']).'">' . apply_filters('the_title', $product['name']) . '</a></h2>';
 
 	//Show Image on Left
 	echo '<div class="foxyshop_product_image">';
