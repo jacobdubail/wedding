@@ -22,8 +22,6 @@ if (!$product['hide_product']) {
 
 	echo '<li class="foxyshop_product_box col-1-2">';
 
-	echo "TEST";
-
 	//Show Image on Left
 	echo '<div class="foxyshop_product_image">';
 	if ($thumbnailSRC = foxyshop_get_main_image("thumbnail")) echo '<a href="' . $product['url'] . '"><img src="' . $thumbnailSRC . '" alt="' . htmlspecialchars($product['name']) . '" class="foxyshop_main_image" /></a>';
