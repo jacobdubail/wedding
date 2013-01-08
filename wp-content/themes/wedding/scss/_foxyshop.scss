@@ -5,7 +5,8 @@
 .foxyshop_product_box {
 
 	&:nth-child(2n) {
-		padding-right: 0;
+		position: relative;
+		right: -20px;
 	}
 	&:nth-child(2n+1) {
 		clear: both;
