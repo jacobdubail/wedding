@@ -95,3 +95,12 @@
     return $contactmethods;
   }
   add_filter( 'user_contactmethods', 'jtd_add_google_profile', 10, 1);
+  
+  
+	function do_the_magic() {
+		log_msg( "inside do_the_magic " . getcwd() );
+		$dir = chdir( GITHUB_SYNC_DIR );
+		log_msg( "chdir'd to " . $dir . ' ' . get_cwd() );
+		exec( 'git pull', $out );
+		log_msg( "exec'd ", $out );
+	}
