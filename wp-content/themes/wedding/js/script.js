@@ -1,6 +1,6 @@
 var $bg         = $("#bg"),
     $container  = $('#masonry'),
-    n           = 4,
+    n           = 3,
     getcolcount = function() {
 
       var w_w   = $(window).width();
@@ -10,14 +10,32 @@ var $bg         = $("#bg"),
         return 1;
       } else if ( w_w <= 768 && w_w > 480 ) {
         return 2;
-      } else if ( w_w <= 1100 && w_w > 768) {
+      } else if ( w_w <= 1200 && w_w > 768) {
         return 3;
       } else {
         return 4;
       }
     };
 
+n = getcolcount();
+
+$container.imagesLoaded( function() {
+  $container.masonry({
+    itemSelector : '.item',
+    columnWidth  : $container.width() / n
+  });
+});
+
+$(window).smartresize(function(){
   n = getcolcount();
+
+  $container.masonry({
+    itemSelector : '.item',
+    columnWidth  : $container.width() / n
+  });
+});
+
+
 
 $bg.backstretch([
 //    "/wp-content/themes/wedding/i/bg/291.jpg",
@@ -109,18 +127,4 @@ $("#controls").on('hover', function() {
     .toggleClass('active');
 });
 
-$container.imagesLoaded( function() {
-  $container.masonry({
-    itemSelector : '.item',
-    columnWidth  : $container.width() / n
-  });
-});
 
-$(window).smartresize(function(){
-  n = getcolcount();
-
-  $container.masonry({
-    itemSelector : '.item',
-    columnWidth  : $container.width() / n
-  });
-});
