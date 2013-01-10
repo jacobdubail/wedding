@@ -737,6 +737,19 @@ a {
     color: #555555; }
     .filters a.active {
       color: #559caa; }
+      .filters a.active:before {
+        content: " 00a0";
+        border-color: transparent transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-style: solid;
+        border-bottom-color: rgba(255, 255, 255, 0.7);
+        border-width: 0 6px 6px;
+        z-index: 3;
+        bottom: -9px;
+        left: 50%;
+        margin-left: -6px; }
 
 /**** Isotope Filtering ****/
 .isotope-item {
