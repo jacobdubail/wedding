@@ -716,9 +716,21 @@ a {
   padding: 0;
   border-bottom: 1px solid #e7e7e7; }
   .filters li {
-    list-style: none; }
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    margin: 0 2px; }
   .filters a {
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 3px 5px;
+    display: block;
+    color: #555555; }
+    .filters a.active {
+      color: #559caa; }
 
 /**** Isotope Filtering ****/
 .isotope-item {
