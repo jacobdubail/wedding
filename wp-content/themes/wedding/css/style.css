@@ -735,22 +735,22 @@ a {
     padding: 3px 5px;
     display: block;
     color: #555555; }
-    .active .filters a {
-      color: #559caa;
-      position: relative; }
-      .active .filters a:before {
-        content: "\00a0";
-        border-color: transparent transparent;
-        height: 0;
-        width: 0;
-        position: absolute;
-        border-style: solid;
-        border-bottom-color: rgba(255, 255, 255, 0.7);
-        border-width: 0 6px 6px;
-        z-index: 3;
-        bottom: -3px;
-        left: 50%;
-        margin-left: -6px; }
+  .filters .active a {
+    color: #559caa;
+    position: relative; }
+    .filters .active a:before {
+      content: "\00a0";
+      border-color: transparent transparent;
+      height: 0;
+      width: 0;
+      position: absolute;
+      border-style: solid;
+      border-bottom-color: rgba(255, 255, 255, 0.7);
+      border-width: 0 6px 6px;
+      z-index: 3;
+      bottom: -3px;
+      left: 50%;
+      margin-left: -6px; }
 
 /**** Isotope Filtering ****/
 .isotope-item {
