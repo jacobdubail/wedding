@@ -39,11 +39,14 @@
   position: relative;
   text-decoration:none;
 
-  @include breakpoint(zebra) {
+  @include breakpoint(hippo) {
   	width: 30.1%;
   }
+  @include breakpoint(zebra) {
+  	width: 46.8%;
+  }
   @include breakpoint(meerkat) {
-    width: 46.8%;
+    width: 96.8%;
   }
   @include breakpoint(snail) {
     width: 96.8%;
