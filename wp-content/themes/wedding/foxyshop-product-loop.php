@@ -39,7 +39,11 @@ if (!$product['hide_product']) {
 	</h2>';
 
 	<?php
-	if ($product['short_description']) echo "<p>" . $product['short_description'] . "</p>";
+	if ($product['short_description']) {
+		echo "<p>" . $product['short_description'] . "</p>";
+	} else {
+		echo apply_filters( 'the_content', wp_trim_words( get_the_content(), 25 ) );
+	}
 
 	//More Details Button
 	echo '<a href="' . $product['url'] . '" class="foxyshop_button">More Details</a>';
