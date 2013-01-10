@@ -505,46 +505,48 @@ a {
         left: 0;
         text-shadow: 1px 1px 0 white; }
 
-.header h1 {
-  font-size: 70px;
-  font-weight: 700;
-  margin: 0;
-  line-height: .87;
-  color: #559caa;
-  text-transform: lowercase;
-  text-shadow: 0 1px 0 #fff;
-  letter-spacing: -3px; }
-  .header h1 a {
-    text-decoration: none;
-    color: #559caa; }
-    .header h1 a:hover {
-      color: #619e98; }
-  .header h1 small {
-    margin: 0 1px; }
-  @media (max-width: 768px) {
-    .header h1 {
-      text-align: center;
-      line-height: .6; }
-      .header h1 small {
-        display: block;
-        line-height: 1;
-        margin-bottom: -11px;
-        font-weight: 300; } }
-.header h2 {
-  text-transform: uppercase;
-  margin: 6px 0 10px;
-  color: #16282c;
-  text-shadow: 0 1px 0 white;
-  font-family: "jaf-facitweb",sans-serif;
-  font-size: 34px;
-  letter-spacing: 2px;
-  word-spacing: 2px; }
-  @media (max-width: 768px) {
-    .header h2 {
-      font-size: 22px;
-      letter-spacing: 0;
-      text-align: center;
-      margin-top: 20px; } }
+.header {
+  text-align: center; }
+  .header h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+    line-height: .87;
+    color: #559caa;
+    text-transform: lowercase;
+    text-shadow: 0 1px 0 #fff;
+    letter-spacing: -3px; }
+    .header h1 a {
+      text-decoration: none;
+      color: #559caa; }
+      .header h1 a:hover {
+        color: #619e98; }
+    .header h1 small {
+      margin: 0 1px; }
+    @media (max-width: 768px) {
+      .header h1 {
+        text-align: center;
+        line-height: .6; }
+        .header h1 small {
+          display: block;
+          line-height: 1;
+          margin-bottom: -11px;
+          font-weight: 300; } }
+  .header h2 {
+    text-transform: uppercase;
+    margin: 6px 0 10px;
+    color: #16282c;
+    text-shadow: 0 1px 0 white;
+    font-family: "jaf-facitweb",sans-serif;
+    font-size: 34px;
+    letter-spacing: 2px;
+    word-spacing: 2px; }
+    @media (max-width: 768px) {
+      .header h2 {
+        font-size: 22px;
+        letter-spacing: 0;
+        text-align: center;
+        margin-top: 20px; } }
 
 #content_toggle {
   -webkit-transition: all 0.3s ease;
@@ -707,6 +709,16 @@ a {
   @media (max-width: 480px) {
     .item {
       width: 96.8%; } }
+
+.filters {
+  position: relative;
+  margin: 1.41em 0;
+  padding: 0;
+  border-bottom: 1px solid #e7e7e7; }
+  .filters li {
+    list-style: none; }
+  .filters a {
+    text-decoration: none; }
 
 /**** Isotope Filtering ****/
 .isotope-item {
