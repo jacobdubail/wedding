@@ -692,3 +692,6 @@ a {
     right: -20px; }
   .foxyshop_product_box:nth-child(2n+1) {
     clear: both; }
+
+.foxyshop_product_info .product_title a {
+  text-decoration: none; }

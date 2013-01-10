@@ -36,13 +36,13 @@ if (!$product['hide_product']) {
 
 	<h2 class="product_title">
 		<a href="<?php echo $product['url']; ?>" title="<?php echo apply_filters('the_title', $product['name']); ?>"><?php echo apply_filters('the_title', $product['name']); ?></a>
-	</h2>';
+	</h2>
 
 	<?php
 	if ($product['short_description']) {
 		echo "<p>" . $product['short_description'] . "</p>";
 	} else {
-		echo apply_filters( 'the_content', wp_trim_words( get_the_content(), 25 ) );
+		echo apply_filters( 'the_content', wp_trim_words( get_the_content(), 20, '&hellip;' ) );
 	}
 
 	//More Details Button
