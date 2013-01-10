@@ -31,22 +31,22 @@
 
 /* PROJECTS */
 .item {
-  width: 23.5%;
+  width: 21.8%;
   height: auto;
-  margin: 0 .75% .75em;
+  margin: 0 1.5% .75em;
   float: left;
   overflow: hidden;
   position: relative;
   text-decoration:none;
 
   @include breakpoint(zebra) {
-  	width: 31.8%;
+  	width: 30.1%;
   }
   @include breakpoint(meerkat) {
-    width: 48.5%;
+    width: 46.8%;
   }
   @include breakpoint(snail) {
-    width: 98.5%;
+    width: 96.8%;
   }
   
 }

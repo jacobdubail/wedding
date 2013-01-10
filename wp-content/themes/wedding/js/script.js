@@ -1,19 +1,19 @@
 var $bg         = $("#bg"),
     $container  = $('#masonry'),
-    n           = '48.5%',
+    n           = 3,
     getcolcount = function() {
 
       var w_w   = $(window).width();
 
 
       if ( w_w <= 480 ) {
-        return '98.5%';
+        return 1;
       } else if ( w_w <= 768 && w_w > 480 ) {
-        return '48.5%';
+        return 2;
       } else if ( w_w <= 1024 && w_w > 768) {
-        return '31.8%';
+        return 3;
       } else {
-        return '23.5%';
+        return 4;
       }
     };
 
@@ -22,7 +22,7 @@ n = getcolcount();
 $container.imagesLoaded( function() {
   $container.masonry({
     itemSelector : '.item',
-    columnWidth  : n //$container.width() / n
+    columnWidth  : $container.width() / n
   });
 });
 
@@ -31,10 +31,9 @@ $(window).smartresize(function(){
 
   $container.masonry({
     itemSelector : '.item',
-    columnWidth  : n //$container.width() / n
+    columnWidth  : $container.width() / n
   });
 
-  console.log( n );
 });
 
 
