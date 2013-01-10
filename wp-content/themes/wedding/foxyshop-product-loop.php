@@ -31,10 +31,14 @@ if (!$product['hide_product']) {
 	echo "</div>\n";
 
 	//Show Main Product Info
-	echo '<div class="foxyshop_product_info">';
+	?>
+	<div class="foxyshop_product_info">
 
-	echo '<h2><a href="' . $product['url'] . '" title="'.apply_filters('the_title', $product['name']).'">' . apply_filters('the_title', $product['name']) . '</a></h2>';
+	<h2 class="product_title">
+		<a href="<?php echo $product['url']; ?>" title="'.apply_filters('the_title', $product['name']).'">' . apply_filters('the_title', $product['name']) . '</a>
+	</h2>';
 
+	<?php
 	if ($product['short_description']) echo "<p>" . $product['short_description'] . "</p>";
 
 	//More Details Button
