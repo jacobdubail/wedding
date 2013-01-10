@@ -742,7 +742,7 @@ a {
     width: 0;
     position: absolute;
     border-style: solid;
-    border-bottom-color: green;
+    border-bottom-color: #444;
     border-width: 0 6px 6px;
     z-index: 3;
     bottom: -2px;
@@ -755,7 +755,7 @@ a {
     width: 0;
     position: absolute;
     border-style: solid;
-    border-bottom-color: purple;
+    border-bottom-color: #fff;
     border-width: 0 6px 6px;
     z-index: 3;
     bottom: -2px;
@@ -771,7 +771,7 @@ a {
       width: 0;
       position: absolute;
       border-style: solid;
-      border-bottom-color: blue;
+      border-bottom-color: rgba(255, 255, 255, 0.7);
       border-width: 0 6px 6px;
       z-index: 3;
       bottom: -1px;

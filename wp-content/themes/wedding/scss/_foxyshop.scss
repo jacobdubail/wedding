@@ -86,7 +86,7 @@
 			width: 0;
 			position: absolute;
 			border-style: solid;
-			border-bottom-color: green;//rgba(255, 255, 255, .7);
+			border-bottom-color: #444;//rgba(255, 255, 255, .7);
 			border-width: 0 6px 6px;
 			z-index: 3;
 			bottom: -2px;
@@ -100,7 +100,7 @@
 			width: 0;
 			position: absolute;
 			border-style: solid;
-			border-bottom-color: purple;//rgba(255, 255, 255, .7);
+			border-bottom-color: #fff;//rgba(255, 255, 255, .7);
 			border-width: 0 6px 6px;
 			z-index: 3;
 			bottom: -2px;
@@ -119,7 +119,7 @@
 				width: 0;
 				position: absolute;
 				border-style: solid;
-				border-bottom-color: blue;//rgba(255, 255, 255, .7);
+				border-bottom-color: rgba(255,255,255,0.7);
 				border-width: 0 6px 6px;
 				z-index: 3;
 				bottom: -1px;
