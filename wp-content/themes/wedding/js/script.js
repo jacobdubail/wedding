@@ -10,7 +10,7 @@ var $bg         = $("#bg"),
         return 1;
       } else if ( w_w <= 768 && w_w > 480 ) {
         return 2;
-      } else if ( w_w <= 1200 && w_w > 768) {
+      } else if ( w_w <= 1024 && w_w > 768) {
         return 3;
       } else {
         return 4;

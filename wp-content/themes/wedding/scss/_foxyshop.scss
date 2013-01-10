@@ -39,6 +39,9 @@
   position: relative;
   text-decoration:none;
 
+  @include breakpoint(zebra) {
+  	width: 31.8%;
+  }
   @include breakpoint(meerkat) {
     width: 48.5%;
   }
@@ -47,3 +50,5 @@
   }
   
 }
+
+

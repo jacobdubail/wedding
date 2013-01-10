@@ -700,6 +700,9 @@ a {
   overflow: hidden;
   position: relative;
   text-decoration: none; }
+  @media (max-width: 1024px) {
+    .item {
+      width: 31.8%; } }
   @media (max-width: 768px) {
     .item {
       width: 48.5%; } }
