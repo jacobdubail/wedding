@@ -52,7 +52,6 @@ $('#filters').on( 'click', 'a', function(e) {
       .siblings()
       .removeClass('active')
       .end()
-      .end()
       .addClass('active');
 
 
