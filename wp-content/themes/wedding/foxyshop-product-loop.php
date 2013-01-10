@@ -20,7 +20,7 @@ global $product, $post;
 $product = foxyshop_setup_product();
 if (!$product['hide_product']) {
 
-	$terms = get_the_terms( $post->ID, 'type');
+	$terms = get_the_terms( $post->ID, 'foxyshop_categories');
 
 	echo '<li class="foxyshop_product_box item">';
 
