@@ -34,3 +34,23 @@
 		}
 	}
 }
+
+
+/* PROJECTS */
+.item {
+  width: 23.5%;
+  height: auto;
+  margin: 0 .75% .75em;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-decoration:none;
+
+  @include breakpoint(meerkat) {
+    width: 48.5%;
+  }
+  @include breakpoint(snail) {
+    width: 31.8%;
+  }
+  
+}

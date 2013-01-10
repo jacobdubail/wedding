@@ -485,7 +485,7 @@ a {
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-    @media (max-width: 870px) {
+    @media (max-width: 768px) {
       .page-wrap .centered {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
@@ -521,7 +521,7 @@ a {
       color: #619e98; }
   .header h1 small {
     margin: 0 1px; }
-  @media (max-width: 870px) {
+  @media (max-width: 768px) {
     .header h1 {
       text-align: center;
       line-height: .6; }
@@ -539,7 +539,7 @@ a {
   font-size: 34px;
   letter-spacing: 2px;
   word-spacing: 2px; }
-  @media (max-width: 870px) {
+  @media (max-width: 768px) {
     .header h2 {
       font-size: 22px;
       letter-spacing: 0;
@@ -584,7 +584,7 @@ a {
   #controls:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1; }
-  @media (max-width: 490px) {
+  @media (max-width: 480px) {
     #controls {
       display: none; } }
   #controls.active {
@@ -695,3 +695,19 @@ a {
 
 .foxyshop_product_info .product_title a {
   text-decoration: none; }
+
+/* PROJECTS */
+.item {
+  width: 23.5%;
+  height: auto;
+  margin: 0 .75% .75em;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none; }
+  @media (max-width: 768px) {
+    .item {
+      width: 48.5%; } }
+  @media (max-width: 480px) {
+    .item {
+      width: 31.8%; } }
