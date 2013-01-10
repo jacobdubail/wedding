@@ -22,21 +22,41 @@ var $bg         = $("#bg"),
 n = getcolcount();
 
 $container.imagesLoaded( function() {
-  $container.masonry({
+  $container.isotope({
     itemSelector : '.item',
-    columnWidth  : $container.width() / n
+    masonry      : { columnWidth: $container.width() / n }
   });
 });
 
 $(window).smartresize(function(){
   n = getcolcount();
 
-  $container.masonry({
+  $container.isotope({
     itemSelector : '.item',
-    columnWidth  : $container.width() / n
+    masonry      : { columnWidth: $container.width() / n }
   });
 
 });
+
+
+
+$('#filters').on( 'click', 'a', function(e) {
+    var $this    = $(this),
+        selector = $this.attr('data-filter');
+    e.preventDefault();
+
+    $container.isotope({ filter: selector });
+
+    $this
+      .addClass('active')
+      .parent()
+      .siblings()
+      .children()
+      .removeClass('active');
+
+
+  });
+
 
 
 

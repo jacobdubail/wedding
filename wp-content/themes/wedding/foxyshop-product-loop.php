@@ -20,6 +20,12 @@ global $product, $post;
 $product = foxyshop_setup_product();
 if (!$product['hide_product']) {
 
+	$terms = get_the_terms( $post->ID, 'type');
+
+	echo "<pre>";
+	print_r( $terms );
+	echo "</pre>";
+
 	echo '<li class="foxyshop_product_box item">';
 
 	//Show Image on Left

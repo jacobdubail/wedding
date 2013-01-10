@@ -6,3 +6,11 @@
 
 
 ?>
+
+<ul class="menu filters cf" id="filters">
+  <li><a href="#" data-filter="*" class="active">View All</a></li>
+  <li><a href="#" data-filter=".lodging">Lodging</a></li>
+  <li><a href="#" data-filter=".activity">Activites</a></li>
+  <li><a href="#" data-filter=".dining">Dining</a></li>
+  <li><a href="#" data-filter=".transportation">Transportation</a></li>
+</ul>
