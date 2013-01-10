@@ -78,9 +78,10 @@
 
 		&.active {
 			color: $heading;
+			position: relative;
 
 			&:before {
-				content: " 00a0";
+				content: "\00a0";
 				border-color: transparent transparent;
 				height: 0;
 				width: 0;
@@ -89,7 +90,7 @@
 				border-bottom-color: rgba(255, 255, 255, .7);
 				border-width: 0 6px 6px;
 				z-index: 3;
-				bottom: -9px;
+				bottom: -3px;
 				left: 50%;
 				margin-left: -6px;
 			}
