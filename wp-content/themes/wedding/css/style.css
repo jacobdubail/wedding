@@ -735,10 +735,10 @@ a {
     padding: 3px 5px;
     display: block;
     color: #555555; }
-    .filters a.active {
+    .active .filters a {
       color: #559caa;
       position: relative; }
-      .filters a.active:before {
+      .active .filters a:before {
         content: "\00a0";
         border-color: transparent transparent;
         height: 0;

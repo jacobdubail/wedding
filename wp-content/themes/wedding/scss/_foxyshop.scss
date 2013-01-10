@@ -76,7 +76,7 @@
 		display: block;
 		color: $c5;
 
-		&.active {
+		.active & {
 			color: $heading;
 			position: relative;
 
