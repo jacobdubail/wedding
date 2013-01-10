@@ -22,7 +22,7 @@ n = getcolcount();
 $container.imagesLoaded( function() {
   $container.masonry({
     itemSelector : '.item',
-    columnWidth  : Math.round( $container.width()/n )
+    columnWidth  : $container.width() / n
   });
 });
 
@@ -31,8 +31,10 @@ $(window).smartresize(function(){
 
   $container.masonry({
     itemSelector : '.item',
-    columnWidth  : Math.round( $container.width()/n )
+    columnWidth  : $container.width() / n
   });
+
+  console.log( Math.round( $container.width()/n ) );
 });
 
 
