@@ -48,11 +48,12 @@ $('#filters').on( 'click', 'a', function(e) {
     $container.isotope({ filter: selector });
 
     $this
-      .addClass('active')
       .parent()
       .siblings()
-      .children()
-      .removeClass('active');
+      .removeClass('active')
+      .end()
+      .end()
+      .addClass('active');
 
 
   });
