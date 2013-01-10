@@ -76,23 +76,56 @@
 		display: block;
 		color: $c5;
 	}
-	.active a {
-		color: $heading;
-		position: relative;
+	.active {
 
-		&:before {
+		&:after,
+		&:before { // I'm in the middle and should match box shadow
 			content: "\00a0";
 			border-color: transparent transparent;
 			height: 0;
 			width: 0;
 			position: absolute;
 			border-style: solid;
-			border-bottom-color: rgba(255, 255, 255, .7);
+			border-bottom-color: green;//rgba(255, 255, 255, .7);
 			border-width: 0 6px 6px;
 			z-index: 3;
-			bottom: -3px;
+			bottom: -2px;
 			left: 50%;
 			margin-left: -6px;
+		}
+		&:after { // I'm on top and should be same as bg
+			content: "\00a0";
+			border-color: transparent transparent;
+			height: 0;
+			width: 0;
+			position: absolute;
+			border-style: solid;
+			border-bottom-color: purple;//rgba(255, 255, 255, .7);
+			border-width: 0 6px 6px;
+			z-index: 3;
+			bottom: -2px;
+			left: 50%;
+			margin-left: -6px;
+		}
+
+		a {
+			color: $heading;
+			position: relative;
+
+			&:before { // I'm at the bottom so should be darkest (red)
+				content: "\00a0";
+				border-color: transparent transparent;
+				height: 0;
+				width: 0;
+				position: absolute;
+				border-style: solid;
+				border-bottom-color: blue;//rgba(255, 255, 255, .7);
+				border-width: 0 6px 6px;
+				z-index: 3;
+				bottom: -1px;
+				left: 50%;
+				margin-left: -6px;
+			}
 		}
 	}
 }

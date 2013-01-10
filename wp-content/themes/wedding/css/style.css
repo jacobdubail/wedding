@@ -735,6 +735,32 @@ a {
     padding: 3px 5px;
     display: block;
     color: #555555; }
+  .filters .active:after, .filters .active:before {
+    content: "\00a0";
+    border-color: transparent transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-style: solid;
+    border-bottom-color: green;
+    border-width: 0 6px 6px;
+    z-index: 3;
+    bottom: -2px;
+    left: 50%;
+    margin-left: -6px; }
+  .filters .active:after {
+    content: "\00a0";
+    border-color: transparent transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-style: solid;
+    border-bottom-color: purple;
+    border-width: 0 6px 6px;
+    z-index: 3;
+    bottom: -2px;
+    left: 50%;
+    margin-left: -6px; }
   .filters .active a {
     color: #559caa;
     position: relative; }
@@ -745,10 +771,10 @@ a {
       width: 0;
       position: absolute;
       border-style: solid;
-      border-bottom-color: rgba(255, 255, 255, 0.7);
+      border-bottom-color: blue;
       border-width: 0 6px 6px;
       z-index: 3;
-      bottom: -3px;
+      bottom: -1px;
       left: 50%;
       margin-left: -6px; }
 
