@@ -35,7 +35,7 @@ if (!$product['hide_product']) {
 	<div class="foxyshop_product_info">
 
 	<h2 class="product_title">
-		<a href="<?php echo $product['url']; ?>" title="'.apply_filters('the_title', $product['name']).'">' . apply_filters('the_title', $product['name']) . '</a>
+		<a href="<?php echo $product['url']; ?>" title="<?php echo apply_filters('the_title', $product['name']); ?>"><?php echo apply_filters('the_title', $product['name']); ?></a>
 	</h2>';
 
 	<?php
