@@ -712,9 +712,9 @@ a {
 
 .filters {
   position: relative;
-  margin: 1.41em 0;
+  margin: 1.41em 0 1.41em 1.5%;
   padding: 0;
-  border-bottom: 1px solid #e7e7e7; }
+  font-size: 0; }
   .filters li {
     list-style: none;
     display: -moz-inline-stack;
@@ -723,7 +723,10 @@ a {
     *vertical-align: auto;
     zoom: 1;
     *display: inline;
-    margin: 0 2px; }
+    padding: 0 2px;
+    margin: 0 0 1.41em;
+    font-size: 13px;
+    border-bottom: #e3e3e3; }
   .filters a {
     text-decoration: none;
     padding: 3px 5px;

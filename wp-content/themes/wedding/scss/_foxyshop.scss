@@ -52,14 +52,17 @@
 
 .filters {
 	position: relative;;
-	margin: $baselineheight 0;
+	margin: 1.41em 0 1.41em 1.5%;
 	padding: 0;
-	border-bottom: 1px solid #e7e7e7;
+	font-size: 0;
 
 	li {
 		list-style: none;
 		@include inline-block;
-		margin: 0 2px;
+		padding: 0 2px;
+		margin: 0 0 $baselineheight;
+		font-size: 13px;
+		border-bottom: #e3e3e3;
 	}
 
 	a {
