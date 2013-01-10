@@ -728,6 +728,7 @@ a {
     font-size: 13px;
     border-bottom: 1px solid #444;
     border-bottom-color: rgba(0, 0, 0, 0.3);
+    position: relative;
     -webkit-box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
     box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0; }
   .filters a {
@@ -745,7 +746,7 @@ a {
     border-bottom-color: #444;
     border-width: 0 6px 6px;
     z-index: 3;
-    bottom: -2px;
+    bottom: -1px;
     left: 50%;
     margin-left: -6px; }
   .filters .active:after {
@@ -774,7 +775,7 @@ a {
       border-bottom-color: rgba(255, 255, 255, 0.7);
       border-width: 0 6px 6px;
       z-index: 3;
-      bottom: -1px;
+      bottom: 0;
       left: 50%;
       margin-left: -6px; }
 
