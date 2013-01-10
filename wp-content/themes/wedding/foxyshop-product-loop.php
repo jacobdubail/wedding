@@ -22,11 +22,11 @@ if (!$product['hide_product']) {
 
 	$terms = get_the_terms( $post->ID, 'foxyshop_categories');
 
-	if ( $terms ) :
+	if ( $terms ) {
     foreach( $terms as $cat ) {
-      $klass = $cat->slug;
-     }
-   }
+			$klass = $cat->slug;
+		}
+	}
 
 	echo '<li class="foxyshop_product_box item '.$klass.' ">';
 
