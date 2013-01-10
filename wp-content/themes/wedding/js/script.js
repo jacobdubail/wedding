@@ -1,4 +1,23 @@
-var $bg = $("#bg");
+var $bg         = $("#bg"),
+    $container  = $('#masonry'),
+    n           = 4,
+    getcolcount = function() {
+
+      var w_w   = $(window).width();
+
+
+      if ( w_w <= 480 ) {
+        return 1;
+      } else if ( w_w <= 768 && w_w > 480 ) {
+        return 2;
+      } else if ( w_w <= 1100 && w_w > 768) {
+        return 3;
+      } else {
+        return 4;
+      }
+    };
+
+  n = getcolcount();
 
 $bg.backstretch([
 //    "/wp-content/themes/wedding/i/bg/291.jpg",
@@ -20,22 +39,22 @@ $bg.backstretch([
   fade: 750,
   duration: 7000
 }).touchwipe({
-  wipeLeft  : function() { 
+  wipeLeft  : function() {
     $bg
       .data('backstretch')
       .prev();
   },
-  wipeRight : function() { 
+  wipeRight : function() {
     $bg
       .data('backstretch')
       .next();
   },
-  wipeUp    : function() { 
+  wipeUp    : function() {
     $bg
       .data('backstretch')
       .prev();
   },
-  wipeDown  : function() { 
+  wipeDown  : function() {
     $bg
       .data('backstretch')
       .next();
@@ -44,23 +63,23 @@ $bg.backstretch([
 
 $("body").on( 'keydown', function (event) {
 
-    if ( event.keyCode == 37 ) { // left
+    if ( event.keyCode === 37 ) { // left
       $(".left").addClass('hover');
-    } else if ( event.keyCode == 39 ) { // right
+    } else if ( event.keyCode === 39 ) { // right
       $(".right").addClass('hover');
-    } else if ( event.keyCode == 38 || event.keyCode == 40 ) {
+    } else if ( event.keyCode === 38 || event.keyCode === 40 ) {
       $(".up,.down").addClass('hover');
     }
 
 }).on('keyup', function() {
   var dir = null;
-  $("#controls li").removeClass('hover'); 
-  if ( event.keyCode == 37 ) { // left
+  $("#controls li").removeClass('hover');
+  if ( event.keyCode === 37 ) { // left
       dir = 'left';
-    } else if ( event.keyCode == 39 ) { // right
+    } else if ( event.keyCode === 39 ) { // right
       dir = 'right';
-    } else if ( event.keyCode == 38 || event.keyCode == 40 ) {
-      dir = 'resume'
+    } else if ( event.keyCode === 38 || event.keyCode === 40 ) {
+      dir = 'resume';
     }
 
     if ( dir === 'left' ) {
@@ -79,7 +98,7 @@ $("body").on( 'keydown', function (event) {
 });
 
 $("#content_toggle").on('hover', function() {
-  $("body").toggleClass('toggle_hover');  
+  $("body").toggleClass('toggle_hover');
 }).on('click', function() {
   $(".page-wrap").toggleClass('content_toggle');
   $(this).text('+');
@@ -88,4 +107,20 @@ $("#content_toggle").on('hover', function() {
 $("#controls").on('hover', function() {
   $(this)
     .toggleClass('active');
+});
+
+$container.imagesLoaded( function() {
+  $container.masonry({
+    itemSelector : '.item',
+    columnWidth  : $container.width() / n
+  });
+});
+
+$(window).smartresize(function(){
+  n = getcolcount();
+
+  $container.masonry({
+    itemSelector : '.item',
+    columnWidth  : $container.width() / n
+  });
 });

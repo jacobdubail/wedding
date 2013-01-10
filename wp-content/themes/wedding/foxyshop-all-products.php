@@ -17,7 +17,7 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 	$args  = array('post_type' => 'foxyshop_product', 'post_status' => 'publish', 'posts_per_page' => foxyshop_products_per_page(), 'paged' => get_query_var('page'));
 	$args  = array_merge($args,foxyshop_sort_order_array());
 	query_posts($args);
-	echo '<ul class="foxyshop_product_list grid">';
+	echo '<ul class="foxyshop_product_list grid" id="masonry">';
 	while (have_posts()) :
 		the_post();
 
