@@ -9,14 +9,6 @@
 	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
 
-
-	h2 a {
-		display: block;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-
 }
 
 .foxyshop_product_info {
@@ -46,7 +38,7 @@
   	width: 46.8%;
   }
   @include breakpoint(meerkat) {
-    width: 96.8%;
+    width: 46.8%;
   }
   @include breakpoint(snail) {
     width: 96.8%;
