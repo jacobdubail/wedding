@@ -676,7 +676,8 @@ a {
     max-width: 100%; }
 
 .foxyshop_product_list {
-  padding: 5px 0 0; }
+  padding: 5px 0 0;
+  width: 100%; }
   @media (max-width: 900px) {
     .foxyshop_product_list {
       float: left;

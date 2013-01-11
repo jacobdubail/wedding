@@ -1,5 +1,6 @@
 .foxyshop_product_list {
 	padding: 5px 0 0;
+	width: 100%;
 
 	@include breakpoint(hyena) {
 		float: left;
