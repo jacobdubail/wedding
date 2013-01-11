@@ -1,5 +1,15 @@
 .foxyshop_product_list {
 	padding: 5px 0 0;
+	width: 100%;
+
+	@include breakpoint(hyena) {
+		float: left;
+		width: 75%;
+	}
+	@include breakpoint(lizard) {
+		float: none;
+		width: 100%;
+	}
 }
 
 .foxyshop_product_box {
@@ -37,8 +47,14 @@
   @include breakpoint(zebra) {
   	width: 46.8%;
   }
-  @include breakpoint(meerkat) {
-    width: 46.8%;
+  @include breakpoint(hyena) {
+  	width: 46.8%;
+  }
+//  @include breakpoint(meerkat) {
+//    width: 46.8%;
+//  }
+  @include breakpoint(lizard) {
+  	width: 96.8%;
   }
   @include breakpoint(snail) {
     width: 96.8%;
@@ -55,6 +71,21 @@
 	margin: $baselineheight 0;
 	padding: 0;
 	font-size: 0;
+	width: 100%;
+	float: none;
+
+	@include breakpoint(hyena) {
+		float: left;
+		width: 25%;
+		min-width: 100px;
+		padding-right: 12px;
+	}
+
+	@include breakpoint(lizard) {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
 
 	li {
 		list-style: none;
@@ -68,6 +99,29 @@
 
 		-webkit-box-shadow: rgba(255, 255, 255, .7) 0 1px 0;
 		box-shadow: rgba(255, 255, 255, .7) 0 1px 0;
+
+		@include breakpoint(hyena) {
+			border-bottom: none;
+			border-left: 1px solid #444;
+			border-left-color: rgba(0,0,0,0.3);
+
+			-webkit-box-shadow: rgba(255, 255, 255, .7) 1px 0 0;
+			box-shadow: rgba(255, 255, 255, .7) 1px 0 0;
+		}
+
+		@include breakpoint(lizard) {
+			border-left: none;
+			border-bottom: 1px solid #444;
+			border-bottom-color: rgba(0,0,0,0.3);
+			position: relative;
+
+			-webkit-box-shadow: rgba(255, 255, 255, .7) 0 1px 0;
+			box-shadow: rgba(255, 255, 255, .7) 0 1px 0;
+
+			&:first-child {
+				display: none;
+			}
+		}
 	}
 
 
@@ -93,6 +147,10 @@
 			bottom: -1px;
 			left: 50%;
 			margin-left: -6px;
+			
+			@include breakpoint(hyena) {
+
+			}
 		}
 		&:after { // I'm on top and should be same as bg
 			content: "\00a0";
@@ -107,6 +165,10 @@
 			bottom: -2px;
 			left: 50%;
 			margin-left: -6px;
+
+			@include breakpoint(hyena) {
+				
+			}
 		}
 
 		a {
@@ -126,6 +188,10 @@
 				bottom: 0;
 				left: 50%;
 				margin-left: -6px;
+
+				@include breakpoint(hyena) {
+				
+				}
 			}
 		}
 	}
