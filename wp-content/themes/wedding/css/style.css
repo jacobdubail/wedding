@@ -756,6 +756,14 @@ a {
         border-left-color: rgba(0, 0, 0, 0.3);
         -webkit-box-shadow: rgba(255, 255, 255, 0.7) 1px 0 0;
         box-shadow: rgba(255, 255, 255, 0.7) 1px 0 0; } }
+    @media (max-width: 600px) {
+      .filters li {
+        border-left: none;
+        border-bottom: 1px solid #444;
+        border-bottom-color: rgba(0, 0, 0, 0.3);
+        position: relative;
+        -webkit-box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
+        box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0; } }
   .filters a {
     text-decoration: none;
     padding: 3px 5px;
