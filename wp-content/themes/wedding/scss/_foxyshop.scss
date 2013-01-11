@@ -6,6 +6,10 @@
 		float: left;
 		width: 75%;
 	}
+	@include breakpoint(lizard) {
+		float: none;
+		width: 100%;
+	}
 }
 
 .foxyshop_product_box {

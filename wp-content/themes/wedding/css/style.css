@@ -682,6 +682,10 @@ a {
     .foxyshop_product_list {
       float: left;
       width: 75%; } }
+  @media (max-width: 600px) {
+    .foxyshop_product_list {
+      float: none;
+      width: 100%; } }
 
 .foxyshop_product_box {
   margin: 0 0 2.82em;
