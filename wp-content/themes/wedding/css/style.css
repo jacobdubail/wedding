@@ -719,7 +719,9 @@ a {
   position: relative;
   margin: 1.41em 0;
   padding: 0;
-  font-size: 0; }
+  font-size: 0;
+  width: 100%;
+  float: none; }
   @media (max-width: 900px) {
     .filters {
       float: left;

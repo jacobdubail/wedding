@@ -64,6 +64,8 @@
 	margin: $baselineheight 0;
 	padding: 0;
 	font-size: 0;
+	width: 100%;
+	float: none;
 
 	@include breakpoint(hyena) {
 		float: left;
