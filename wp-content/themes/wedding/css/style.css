@@ -715,6 +715,9 @@ a {
   @media (max-width: 900px) {
     .item {
       width: 46.8%; } }
+  @media (max-width: 600px) {
+    .item {
+      width: 96.8%; } }
   @media (max-width: 480px) {
     .item {
       width: 96.8%; } }

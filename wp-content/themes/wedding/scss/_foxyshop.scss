@@ -53,6 +53,9 @@
 //  @include breakpoint(meerkat) {
 //    width: 46.8%;
 //  }
+  @include breakpoint(lizard) {
+  	width: 96.8%;
+  }
   @include breakpoint(snail) {
     width: 96.8%;
   }
