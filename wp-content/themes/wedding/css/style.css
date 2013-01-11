@@ -728,6 +728,11 @@ a {
       width: 25%;
       min-width: 100px;
       padding-right: 12px; } }
+  @media (max-width: 600px) {
+    .filters {
+      float: none;
+      width: 100%;
+      padding: 0; } }
   .filters li {
     list-style: none;
     display: -moz-inline-stack;
