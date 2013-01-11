@@ -680,7 +680,7 @@ a {
   @media (max-width: 900px) {
     .foxyshop_product_list {
       float: left;
-      width: 70%; } }
+      width: 80%; } }
 
 .foxyshop_product_box {
   margin: 0 0 2.82em;
@@ -722,7 +722,7 @@ a {
   @media (max-width: 900px) {
     .filters {
       float: left;
-      width: 30%;
+      width: 20%;
       padding-right: 12px; } }
   .filters li {
     list-style: none;
