@@ -6,11 +6,11 @@ var $bg         = $("#bg"),
       var w_w   = $(window).width();
 
 
-      if ( w_w <= 480 ) {
+      if ( w_w <= 900 ) {
         return 1;
-      } else if ( w_w <= 768 && w_w > 480 ) {
-        return 2;
-      } else if ( w_w <= 1024 && w_w > 768) {
+//      } else if ( w_w <= 900 && w_w > 600 ) {
+ //       return 1;
+      } else if ( w_w <= 1024 && w_w > 900) {
         return 2;
       } else if ( w_w <= 1200 && w_w > 1024) {
         return 3;

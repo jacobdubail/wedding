@@ -5,6 +5,9 @@
   @if $point == zebra {
     @media (max-width: 1024px) { @content; }
   }
+  @if $point == hyena {
+    @media (max-width: 900px) { @content; }
+  }
   @else if $point == meerkat {
     @media (max-width: 768px)  { @content; }
   }

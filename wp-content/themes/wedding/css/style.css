@@ -707,9 +707,9 @@ a {
   @media (max-width: 1024px) {
     .item {
       width: 46.8%; } }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .item {
-      width: 46.8%; } }
+      width: 98.6%; } }
   @media (max-width: 480px) {
     .item {
       width: 96.8%; } }
