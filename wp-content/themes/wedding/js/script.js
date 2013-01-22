@@ -81,6 +81,7 @@ function get_current_filter() {
     $filters.trigger('click');
   }
 }
+get_current_filter();
 
 
 function set_current_filter() {
