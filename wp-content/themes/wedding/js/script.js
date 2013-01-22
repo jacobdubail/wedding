@@ -78,7 +78,7 @@ $filters.on( 'click', 'a', function(e) {
 function get_current_filter() {
   var hash = window.location.hash;
   if ( hash ) {
-    $filters.trigger('click');
+    $filters.find('a').trigger('click');
   }
 }
 get_current_filter();
