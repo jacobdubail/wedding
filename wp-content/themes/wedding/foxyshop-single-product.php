@@ -24,7 +24,7 @@ while (have_posts()) : the_post();
 	foxyshop_start_form();
 
 	//Write Breadcrumbs
-	foxyshop_breadcrumbs(" &raquo; ", "&laquo; Back to Products");
+	//foxyshop_breadcrumbs(" &raquo; ", "&laquo; Back to Products");
 
 
 	//Shows Main Image and Optional Slideshow
