@@ -68,7 +68,6 @@ $('#filters').on( 'click', 'a', function(e) {
       .end()
       .addClass('active');
 
-
   });
 
 
