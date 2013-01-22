@@ -9,8 +9,8 @@
 
 <ul class="menu filters cf" id="filters">
   <li class="active"><a href="#" data-filter="*">View All</a></li>
-  <li><a href="#" data-filter=".lodging">Lodging</a></li>
-  <li><a href="#" data-filter=".activity">Activites</a></li>
-  <li><a href="#" data-filter=".dining">Dining</a></li>
-  <li><a href="#" data-filter=".transportation">Transportation</a></li>
+  <li><a href="#" data-filter=".lodging" class="lodging">Lodging</a></li>
+  <li><a href="#" data-filter=".activity" class="activity">Activites</a></li>
+  <li><a href="#" data-filter=".dining" class="dining">Dining</a></li>
+  <li><a href="#" data-filter=".transportation" class="transportation">Transportation</a></li>
 </ul>
