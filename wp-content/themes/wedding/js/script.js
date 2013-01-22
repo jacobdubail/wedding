@@ -74,13 +74,17 @@ function set_current_filter() {
       $filters  = $("#filters");
   for (var i = 0; i < classList.length; i++) {
     if ( classList[i] === 'activity' ) {
-        $filters.find('.activity').addClass('active');
+      $filters.children().removeClass('active');
+      $filters.find('.activity').parent().addClass('active');
     } else if ( classList[i] === 'lodging' ) {
-        $filters.find('.lodging').addClass('active');
+      $filters.children().removeClass('active');
+      $filters.find('.lodging').parent().addClass('active');
     } else if ( classList[i] === 'dining' ) {
-        $filters.find('.dining').addClass('active');
+      $filters.children().removeClass('active');
+      $filters.find('.dining').parent().addClass('active');
     } else if ( classList[i] === 'transportation' ) {
-        $filters.find('.transportation').addClass('active');
+      $filters.children().removeClass('active');
+      $filters.find('.transportation').parent().addClass('active');
     }
   }
 }
