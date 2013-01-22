@@ -62,7 +62,7 @@ $('#filters').on( 'click', 'a', function(e) {
     $container.isotope({ filter: selector });
 
     if ( $("body").hasClass('single-foxyshop_product') ) {
-      window.location.pathname = "registry#" + selector.substring(1);
+      window.location.pathname = "registry";
       window.location.hash     = selector.substring(1);
     }
 
