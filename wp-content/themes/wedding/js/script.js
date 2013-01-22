@@ -1,5 +1,6 @@
 var $bg         = $("#bg"),
     $container  = $('#masonry'),
+    $filters    = $("#filters"),
     n           = 3,
     getcolcount = function() {
 
@@ -54,7 +55,7 @@ $(window).smartresize(function(){
 
 
 
-$('#filters').on( 'click', 'a', function(e) {
+$filters.on( 'click', 'a', function(e) {
     var $this    = $(this),
         selector = $this.attr('data-filter');
     e.preventDefault();
@@ -74,9 +75,17 @@ $('#filters').on( 'click', 'a', function(e) {
       .addClass('active');
   });
 
+function get_current_filter() {
+  var hash = window.location.hash;
+  if ( hash ) {
+    $filters.trigger('click');
+  }
+}
+
+
 function set_current_filter() {
-  var classList = $("body").attr("class").split(/\s+/),
-      $filters  = $("#filters");
+  var classList = $("body").attr("class").split(/\s+/);
+
   for (var i = 0; i < classList.length; i++) {
     if ( classList[i] === 'activity' ) {
       $filters.children().removeClass('active');
