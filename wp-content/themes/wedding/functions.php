@@ -1,5 +1,5 @@
-<?php 
-      
+<?php
+
     if (function_exists('register_sidebar')) {
       register_sidebar(array(
         'name' => 'Sidebar Widgets',
@@ -19,7 +19,7 @@
   function register_my_menu() {
     register_nav_menu( 'main-nav', __( 'Main Nav' ) );
   }
-  
+
   add_theme_support( 'post-thumbnails' );
   add_theme_support( 'automatic_feed_links' );
   remove_action('wp_head', 'rsd_link');
@@ -31,14 +31,16 @@
   remove_action('wp_head', 'start_post_rel_link', 10, 0);
   remove_action('wp_head', 'parent_post_rel_link', 10, 0);
   remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
-  
-    
+
+
   add_filter('widget_text', 'do_shortcode');
-  
+
   function category_id_class($classes) {
     global $post;
     foreach((get_the_category($post->ID)) as $category)
       $classes [] = 'cat-' . $category->cat_ID . '-id';
+    foreach((get_the_terms($post->ID, 'foxyshop_categories')) as $category)
+      $classes [] = $category->slug;
     return $classes;
   }
   add_filter('post_class', 'category_id_class');
@@ -50,23 +52,23 @@
     wp_deregister_script( 'l10n' );
 
     $jQuery = "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js";
-    $test   = @fopen($jQuery,'r'); 
-    if ( $test === false ) { 
+    $test   = @fopen($jQuery,'r');
+    if ( $test === false ) {
       $jQuery = get_template_directory_uri() . '/js/jquery.min.js';
     }
 
     wp_register_script('jquery', $jQuery, false, '1.8.2', true);
     wp_enqueue_script('jquery');
-     
+
     wp_register_script('wedding_plugins', '/wp-content/themes/wedding/js/plugins.min.js', array('jquery'), '1', true );
     wp_enqueue_script('wedding_plugins');
-    
+
     wp_register_script('wedding_functions', '/wp-content/themes/wedding/js/script.min.js', array('jquery', 'wedding_plugins'), '1', true );
-    wp_enqueue_script('wedding_functions');    
-    
+    wp_enqueue_script('wedding_functions');
+
     wp_register_style('wedding_styles', '/wp-content/themes/wedding/css/style.css', '', '1', 'all');
     wp_enqueue_style('wedding_styles');
-    
+
   }
 
   function complete_version_removal() { return ''; }
@@ -77,26 +79,26 @@
   add_filter   ('post_comments_link',      'xwp_dofollow');
   add_filter   ('comment_reply_link',      'xwp_dofollow');
   add_filter   ('comment_text',            'xwp_dofollow');
-  
+
   function jtd_allow_rel() {
     global $allowedtags;
     $allowedtags['a']['rel'] = array ();
   }
   add_action( 'wp_loaded', 'jtd_allow_rel' );
-  
+
   function jtd_add_google_profile( $contactmethods ) {
     // Add Google Profiles
     $contactmethods['google_profile'] = 'Google Profile URL';
     $contactmethods['facebook']       = 'Facebook';
     $contactmethods['twitter']        = 'Twitter';
     unset($contactmethods['aim']);
-    unset($contactmethods['yim']);    
+    unset($contactmethods['yim']);
     unset($contactmethods['jabber']);
     return $contactmethods;
   }
   add_filter( 'user_contactmethods', 'jtd_add_google_profile', 10, 1);
-  
-  
+
+
 	function do_the_magic() {
 		log_msg( "inside do_the_magic " . getcwd() );
 		$dir = chdir( GITHUB_SYNC_DIR );
@@ -107,8 +109,8 @@
 
 
 add_action('init', 'my_foxyshop_dequeue', 11);
-function my_foxyshop_dequeue() { 
-  wp_dequeue_style('foxyshop_css'); 
+function my_foxyshop_dequeue() {
+  wp_dequeue_style('foxyshop_css');
 }
 
 
@@ -135,40 +137,40 @@ function my_foxyshop_dequeue() {
 */
 
 function aq_resize( $url, $width, $height = null, $crop = null, $single = true ) {
-  
+
   //validate inputs
   if(!$url OR !$width ) return false;
-  
+
   //define upload path & dir
   $upload_info = wp_upload_dir();
   $upload_dir = $upload_info['basedir'];
   $upload_url = $upload_info['baseurl'];
-  
+
   //check if $img_url is local
   if(strpos( $url, $upload_url ) === false) return false;
-  
+
   //define path of image
   $rel_path = str_replace( $upload_url, '', $url);
   $img_path = $upload_dir . $rel_path;
-  
+
   //check if img path exists, and is an image indeed
   if( !file_exists($img_path) OR !getimagesize($img_path) ) return false;
-  
+
   //get image info
   $info = pathinfo($img_path);
   $ext = $info['extension'];
   list($orig_w,$orig_h) = getimagesize($img_path);
-  
+
   //get image size after cropping
   $dims = image_resize_dimensions($orig_w, $orig_h, $width, $height, $crop);
   $dst_w = $dims[4];
   $dst_h = $dims[5];
-  
+
   //use this to check if cropped image already exists, so we can return that instead
   $suffix = "{$dst_w}x{$dst_h}";
   $dst_rel_path = str_replace( '.'.$ext, '', $rel_path);
   $destfilename = "{$upload_dir}{$dst_rel_path}-{$suffix}.{$ext}";
-  
+
   if(!$dst_h) {
     //can't resize, so return original url
     $img_url = $url;
@@ -178,29 +180,29 @@ function aq_resize( $url, $width, $height = null, $crop = null, $single = true )
   //else check if cache exists
   elseif(file_exists($destfilename) && getimagesize($destfilename)) {
     $img_url = "{$upload_url}{$dst_rel_path}-{$suffix}.{$ext}";
-  } 
+  }
   //else, we resize the image and return the new resized image url
   else {
-    
+
     // Note: This pre-3.5 fallback check will edited out in subsequent version
     if(function_exists('wp_get_image_editor')) {
-    
+
       $editor = wp_get_image_editor($img_path);
-      
+
       if ( is_wp_error( $editor ) || is_wp_error( $editor->resize( $width, $height, $crop ) ) )
         return false;
-      
+
       $resized_file = $editor->save();
-      
+
       if(!is_wp_error($resized_file)) {
         $resized_rel_path = str_replace( $upload_dir, '', $resized_file['path']);
         $img_url = $upload_url . $resized_rel_path;
       } else {
         return false;
       }
-      
+
     } else {
-    
+
       $resized_img_path = image_resize( $img_path, $width, $height, $crop ); // Fallback foo
       if(!is_wp_error($resized_img_path)) {
         $resized_rel_path = str_replace( $upload_dir, '', $resized_img_path);
@@ -208,11 +210,11 @@ function aq_resize( $url, $width, $height = null, $crop = null, $single = true )
       } else {
         return false;
       }
-    
+
     }
-    
+
   }
-  
+
   //return the output
   if($single) {
     //str return
@@ -225,6 +227,6 @@ function aq_resize( $url, $width, $height = null, $crop = null, $single = true )
       2 => $dst_h
     );
   }
-  
+
   return $image;
 }
