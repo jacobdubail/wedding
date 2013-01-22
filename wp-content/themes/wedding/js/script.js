@@ -67,9 +67,23 @@ $('#filters').on( 'click', 'a', function(e) {
       .removeClass('active')
       .end()
       .addClass('active');
-
   });
 
+function set_current_filter() {
+  var classList = $("body").attr("class").split(/\s+/),
+      $filters  = $("#filters");
+  for (var i = 0; i < classList.length; i++) {
+    if ( classList[i] === 'activity' ) {
+        $filters.find('.activity').addClass('active');
+    } else if ( classList[i] === 'lodging' ) {
+        $filters.find('.lodging').addClass('active');
+    } else if ( classList[i] === 'dining' ) {
+        $filters.find('.dining').addClass('active');
+    } else if ( classList[i] === 'transportation' ) {
+        $filters.find('.transportation').addClass('active');
+    }
+  }
+}
 
 
 
