@@ -88,6 +88,7 @@ function set_current_filter() {
     }
   }
 }
+set_current_filter();
 
 
 
