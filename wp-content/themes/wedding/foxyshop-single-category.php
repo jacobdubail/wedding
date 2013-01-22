@@ -13,7 +13,7 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 	global $product;
 
 	//Write Breadcrumbs
-	foxyshop_breadcrumbs(" &raquo; ");
+	//foxyshop_breadcrumbs(" &raquo; ");
 
 	//Get Current Page Info
 	$term = get_term_by('slug', get_query_var('term'), "foxyshop_categories");
