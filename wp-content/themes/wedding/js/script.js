@@ -67,6 +67,8 @@ $filters.on( 'click', 'a', function(e) {
       window.location.hash     = selector.substring(1);
     }
 
+    window.location.hash = '';
+
     $this
       .parent()
       .siblings()
