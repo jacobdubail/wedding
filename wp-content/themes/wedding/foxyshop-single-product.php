@@ -38,36 +38,29 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 	//Product Is New Tag (number of days since added)
 	//if (foxyshop_is_product_new(14)) echo '<p class="new-product">NEW!</p>';
 
-	//Main Product Description
-	echo $product['description'];
+		echo $product['description'];
 
 
-	//Show Variations (showQuantity: 0 = Do Not Show Qty, 1 = Show Before Variations, 2 = Show Below Variations)
-	foxyshop_product_variations(2);
+		//Show Variations (showQuantity: 0 = Do Not Show Qty, 1 = Show Before Variations, 2 = Show Below Variations)
+		foxyshop_product_variations(2);
 
-	//Check Inventory Levels and Display Status (last variable allows backordering of out of stock items)
-	foxyshop_inventory_management("There are only %c item%s left in stock.", "Item is not in stock.", false);
+		//Check Inventory Levels and Display Status (last variable allows backordering of out of stock items)
+		foxyshop_inventory_management("There are only %c item%s left in stock.", "Item is not in stock.", false);
 
-	//Add On Products ($qty [1 or 0], $before_entry, $after_entry)
-	foxyshop_addon_products();
+		//Add On Products ($qty [1 or 0], $before_entry, $after_entry)
+		foxyshop_addon_products();
 
-	//Add To Cart Button
-	echo '<button type="submit" name="x:productsubmit" id="productsubmit" class="foxyshop_button">Add To Cart</button>';
+		echo '<button type="submit" name="x:productsubmit" id="productsubmit" class="foxyshop_button">Add To Cart</button>';
 
-	//Shows the Price (includes sale price if applicable)
-	echo '<div id="foxyshop_main_price">';
-		foxyshop_price();
+		echo '<div id="foxyshop_main_price">';
+			foxyshop_price();
+		echo '</div>';
+
+
 	echo '</div>';
 
-	//Shows any related products
 	foxyshop_related_products("Related Products");
 
-
-	//Custom Code Can Go Here
-
-
-	//Ends the form
-	echo '</div>';
 	echo '</form>';
 
 
