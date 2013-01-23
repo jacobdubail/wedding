@@ -80,7 +80,9 @@ function get_current_filter() {
   var hash = window.location.hash;
   if ( hash ) {
     $filters.find( '.' + hash.substring(1) ).trigger('click');
-    window.location.hash = '';
+    //window.location.hash = '';
+    console.log( 'HASH: ', hash.substring(1) );
+    console.log( 'filter: ', $filters.find( '.' + hash.substring(1) ) );
   }
 }
 get_current_filter();
