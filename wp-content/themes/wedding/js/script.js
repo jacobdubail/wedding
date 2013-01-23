@@ -74,14 +74,13 @@ $filters.on( 'click', 'a', function(e) {
       .removeClass('active')
       .end()
       .addClass('active');
-
-      window.location.hash = '';
   });
 
 function get_current_filter() {
   var hash = window.location.hash;
   if ( hash ) {
     $filters.find( '.' + hash.substring(1) ).trigger('click');
+    window.location.hash = '';
   }
 }
 get_current_filter();
