@@ -65,6 +65,7 @@ $filters.on( 'click', 'a', function(e) {
     if ( $("body").hasClass('single-foxyshop_product') ) {
       window.location.pathname = "registry";
       window.location.hash     = selector.substring(1);
+      return;
     }
 
     window.location.hash = '';
