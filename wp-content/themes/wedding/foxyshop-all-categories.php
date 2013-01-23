@@ -11,28 +11,35 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 
 	foxyshop_include('header');
 
+	echo '<div id="foxyshop_container">';
+
 	//Run the query for all products in this category
 	global $paged, $wp_query;
 	$paged = get_query_var('page');
-	$args  = array('post_type' => 'foxyshop_product', 'post_status' => 'publish', 'posts_per_page' => foxyshop_products_per_page(), 'paged' => get_query_var('page'));
+	$args  = array(
+		'post_type' => 'foxyshop_product',
+		'post_status' => 'publish',
+		'posts_per_page' => foxyshop_products_per_page(),
+		'paged' => get_query_var('page')
+	);
 	$args  = array_merge($args,foxyshop_sort_order_array());
 	query_posts($args);
-	echo '<ul class="foxyshop_product_list grid" id="masonry">';
-	while (have_posts()) :
-		the_post();
 
-		//Product Display
-		foxyshop_include('product-loop');
+		echo '<ul class="foxyshop_product_list grid" id="masonry">';
+			while (have_posts()) :
+				the_post();
 
-	endwhile;
-	echo '</ul>';
+				//Product Display
+				foxyshop_include('product-loop');
+
+			endwhile;
+		echo '</ul>';
 
 	//Pagination
-	foxyshop_get_pagination();
+	//foxyshop_get_pagination();
 
-	foxyshop_include('footer');
+	echo "</div>";
 
-
+foxyshop_include('footer');
 get_footer();
-
 ?>
