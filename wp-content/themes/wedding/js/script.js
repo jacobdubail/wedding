@@ -68,20 +68,20 @@ $filters.on( 'click', 'a', function(e) {
       return;
     }
 
-    window.location.hash = '';
-
     $this
       .parent()
       .siblings()
       .removeClass('active')
       .end()
       .addClass('active');
+
+      window.location.hash = '';
   });
 
 function get_current_filter() {
   var hash = window.location.hash;
   if ( hash ) {
-    $filters.find('a').trigger('click');
+    $filters.find( '.' + hash.substring(1) ).trigger('click');
   }
 }
 get_current_filter();
