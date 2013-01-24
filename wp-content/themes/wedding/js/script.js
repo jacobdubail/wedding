@@ -2,6 +2,7 @@ var $bg         = $("#bg"),
     $container  = $('#masonry'),
     $filters    = $("#filters"),
     n           = 3,
+    win_width   = $(window).width(),
     getcolcount = function() {
 
       var w_w   = $(window).width();
@@ -22,19 +23,6 @@ var $bg         = $("#bg"),
 
 n = getcolcount();
 
-/*
-if ( w_w <= 480 ) {
-  return 1;
-} else if ( w_w <= 900 && w_w > 480 ) {
-  return 2;
-} else if ( w_w <= 1024 && w_w > 900) {
-  return 2;
-} else if ( w_w <= 1200 && w_w > 1024) {
-  return 3;
-} else {
-  return 4;
-}
-*/
 
 $container.imagesLoaded( function() {
   $container.isotope({
@@ -108,47 +96,53 @@ set_current_filter();
 
 
 
-$bg.backstretch([
-//    "/wp-content/themes/wedding/i/bg/291.jpg",
-//    "/wp-content/themes/wedding/i/bg/121.jpg",
-    "/wp-content/themes/wedding/i/bg/610.jpg",
-    "/wp-content/themes/wedding/i/bg/271.jpg",
-    "/wp-content/themes/wedding/i/bg/401.jpg",
-    "/wp-content/themes/wedding/i/bg/421.jpg",
-    "/wp-content/themes/wedding/i/bg/710.jpg",
-    "/wp-content/themes/wedding/i/fore/151.jpeg",
-    "/wp-content/themes/wedding/i/fore/501.jpeg",
-    "/wp-content/themes/wedding/i/fore/481.jpeg",
-    "/wp-content/themes/wedding/i/fore/201.jpeg",
-    "/wp-content/themes/wedding/i/fore/341.jpeg",
-    "/wp-content/themes/wedding/i/fore/371.jpeg",
-    "/wp-content/themes/wedding/i/fore/101.jpeg",
-    "/wp-content/themes/wedding/i/fore/511.jpeg"
-  ], {
-  fade: 750,
-  duration: 7000
-}).touchwipe({
-  wipeLeft  : function() {
-    $bg
-      .data('backstretch')
-      .prev();
-  },
-  wipeRight : function() {
-    $bg
-      .data('backstretch')
-      .next();
-  },
-  wipeUp    : function() {
-    $bg
-      .data('backstretch')
-      .prev();
-  },
-  wipeDown  : function() {
-    $bg
-      .data('backstretch')
-      .next();
-  }
-});
+if ( win_width > 768 ) {
+
+  $bg.backstretch([
+  //    "/wp-content/themes/wedding/i/bg/291.jpg",
+  //    "/wp-content/themes/wedding/i/bg/121.jpg",
+      "/wp-content/themes/wedding/i/bg/610.jpg",
+      "/wp-content/themes/wedding/i/bg/271.jpg",
+      "/wp-content/themes/wedding/i/bg/401.jpg",
+      "/wp-content/themes/wedding/i/bg/421.jpg",
+      "/wp-content/themes/wedding/i/bg/710.jpg",
+      "/wp-content/themes/wedding/i/fore/151.jpeg",
+      "/wp-content/themes/wedding/i/fore/501.jpeg",
+      "/wp-content/themes/wedding/i/fore/481.jpeg",
+      "/wp-content/themes/wedding/i/fore/201.jpeg",
+      "/wp-content/themes/wedding/i/fore/341.jpeg",
+      "/wp-content/themes/wedding/i/fore/371.jpeg",
+      "/wp-content/themes/wedding/i/fore/101.jpeg",
+      "/wp-content/themes/wedding/i/fore/511.jpeg"
+    ], {
+    fade: 750,
+    duration: 7000
+  });
+  // .touchwipe({
+  //   wipeLeft  : function() {
+  //     $bg
+  //       .data('backstretch')
+  //       .prev();
+  //   },
+  //   wipeRight : function() {
+  //     $bg
+  //       .data('backstretch')
+  //       .next();
+  //   },
+  //   wipeUp    : function() {
+  //     $bg
+  //       .data('backstretch')
+  //       .prev();
+  //   },
+  //   wipeDown  : function() {
+  //     $bg
+  //       .data('backstretch')
+  //       .next();
+  //   }
+  // });
+
+}
+
 
 $("body").on( 'keydown', function (event) {
 
