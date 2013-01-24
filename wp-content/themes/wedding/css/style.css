@@ -506,9 +506,9 @@ a {
     padding: 50px;
     background: rgba(255, 255, 255, 0.8); }
     .no-rgba .page-wrap .centered {
-      background: transparent;
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
-      zoom: 1; }
+      background: url(../i/fff_80.png) repeat 0 0 transparent; }
+    .no-boxshadow .page-wrap .centered {
+      border: 1px solid #ababab; }
     .home .page-wrap .centered {
       max-width: 550px; }
     body:hover .page-wrap .centered {
@@ -726,9 +726,9 @@ a {
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.35); }
   .no-rgba .foxyshop_product_wrap, .no-rgba .foxyshop_related_product_list .foxyshop_product_box, .foxyshop_related_product_list .no-rgba .foxyshop_product_box {
-    background: transparent;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66FFFFFF,endColorstr=#66FFFFFF);
-    zoom: 1; }
+    background: url(../i/fff_40.png) repeat 0 0 transparent; }
+  .no-boxshadow .foxyshop_product_wrap, .no-boxshadow .foxyshop_related_product_list .foxyshop_product_box, .foxyshop_related_product_list .no-boxshadow .foxyshop_product_box {
+    border: 1px solid #ababab; }
 
 .foxyshop_product_info .product_title a {
   text-decoration: none; }

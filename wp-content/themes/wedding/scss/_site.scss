@@ -74,9 +74,10 @@ a {
 
 
     .no-rgba & {
-      background:transparent;
-      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
-      zoom: 1;
+      background: url(../i/fff_80.png) repeat 0 0 transparent;
+    }
+    .no-boxshadow & {
+      border: 1px solid #ababab;
     }
 
 
