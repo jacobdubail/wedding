@@ -851,15 +851,15 @@ a {
     float: left;
     width: 23%;
     margin: 0 1% 15px; }
+    @media (max-width: 1200px) {
+      .foxyshop_related_product_list .foxyshop_product_box {
+        width: 31.3%; } }
     @media (max-width: 768px) {
       .foxyshop_related_product_list .foxyshop_product_box {
         width: 48%; } }
     @media (max-width: 480px) {
       .foxyshop_related_product_list .foxyshop_product_box {
         width: 98%; } }
-    @media (max-width: 1200px) {
-      .foxyshop_related_product_list .foxyshop_product_box {
-        width: 31.3%; } }
 
 /**** Isotope Filtering ****/
 .isotope-item {
