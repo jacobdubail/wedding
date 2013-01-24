@@ -72,9 +72,7 @@ a {
     padding: 50px;
     background: rgba(white, .8);
 
-    @include breakpoint(lizard) {
-      width: 96%;
-    }
+
 
     .home & {
       max-width: 550px;
@@ -90,6 +88,10 @@ a {
       width: 82%; 
       padding: 30px;
     };
+
+    @include breakpoint(lizard) {
+      width: 96%;
+    }
 
     ul.hearts {
 

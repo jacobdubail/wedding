@@ -505,9 +505,6 @@ a {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
     padding: 50px;
     background: rgba(255, 255, 255, 0.8); }
-    @media (max-width: 600px) {
-      .page-wrap .centered {
-        width: 96%; } }
     .home .page-wrap .centered {
       max-width: 550px; }
     body:hover .page-wrap .centered {
@@ -523,6 +520,9 @@ a {
         opacity: 1;
         width: 82%;
         padding: 30px; } }
+    @media (max-width: 600px) {
+      .page-wrap .centered {
+        width: 96%; } }
     .page-wrap .centered ul.hearts > li {
       list-style: none;
       position: relative;
