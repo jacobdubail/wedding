@@ -142,11 +142,13 @@ a {
       text-align:center;
       line-height:.6;
       small {
-        display:block;
         line-height:1;
         margin-bottom:-11px;
         font-weight:300;
       }
+    }
+    @include breakpoint(snail) {
+      font-size: 50px;
     }
   }
   h2 {
