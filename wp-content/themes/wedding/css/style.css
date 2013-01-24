@@ -512,16 +512,12 @@ a {
     .home .page-wrap .centered {
       max-width: 550px; }
     body:hover .page-wrap .centered {
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-      opacity: 1;
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
     @media (max-width: 768px) {
       .page-wrap .centered {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-        opacity: 1;
         width: 82%;
         padding: 30px; } }
     @media (max-width: 600px) {
