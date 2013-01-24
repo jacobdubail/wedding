@@ -307,9 +307,13 @@ table {
 
 .chromeframe {
   margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
+  background: url(../i/fff_80.png) repeat 0 0 transparent;
+  border: 1px solid #ababab;
+  color: #1a1a1a;
+  font-size: 22px;
+  padding: 3em 5%;
+  position: relative;
+  z-index: 1000; }
 
 .cf, .main-content, .foxyshop_related_product_list {
   *zoom: 1; }
