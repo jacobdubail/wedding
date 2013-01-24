@@ -407,11 +407,11 @@ li {
   margin: 0;
   padding: 0; }
 
-h1, h2, .foxyshop_related_product_list .titleline, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   font-weight: normal;
   margin: 0 0 1.41em; }
 
-h2, .foxyshop_related_product_list .titleline {
+h2 {
   font-size: 16px;
   margin: 0 0 7px; }
 
@@ -535,7 +535,7 @@ a {
           line-height: 1;
           margin-bottom: -11px;
           font-weight: 300; } }
-  .header h2, .header .foxyshop_related_product_list .titleline, .foxyshop_related_product_list .header .titleline {
+  .header h2 {
     text-transform: uppercase;
     margin: 6px 0 10px;
     color: #16282c;
@@ -545,7 +545,7 @@ a {
     letter-spacing: 2px;
     word-spacing: 2px; }
     @media (max-width: 768px) {
-      .header h2, .header .foxyshop_related_product_list .titleline, .foxyshop_related_product_list .header .titleline {
+      .header h2 {
         font-size: 22px;
         letter-spacing: 0;
         text-align: center;
@@ -784,11 +784,11 @@ a {
 
 .foxyshop_related_product_list {
   clear: both;
-  margin: 1.41em 0; }
-  .foxyshop_related_product_list .foxyshop_product_box {
+  margin: 1.41em 0;
+  padding: 0; }
+  .foxyshop_related_product_list .foxyshop_product_wrap {
     float: left;
-    width: 33.3%;
-    padding: 0 10px; }
+    width: 33.3%; }
 
 /**** Isotope Filtering ****/
 .isotope-item {

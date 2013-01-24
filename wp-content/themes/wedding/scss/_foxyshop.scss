@@ -138,14 +138,12 @@
   @extend .cf;
   clear: both;
   margin: $baselineheight 0;
+  padding: 0;
 
-  .titleline {
-    @extend h2;
-  }
-  .foxyshop_product_box {
+
+  .foxyshop_product_wrap {
     float: left;
     width: 33.3%;
-    padding: 0 10px;
   }
 }
 
