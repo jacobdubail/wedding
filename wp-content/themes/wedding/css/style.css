@@ -423,11 +423,11 @@ h3 {
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.17)), color-stop(100%, rgba(0, 0, 0, 0.25)));
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.25));
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.25));
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.25));
-  background: linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.25));
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.17)), color-stop(100%, rgba(0, 0, 0, 0.35)));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.35));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.35));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.35));
+  background: linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.35));
   background-color: #99c4cc;
   padding: 4px 9px;
   font-size: 12px;
