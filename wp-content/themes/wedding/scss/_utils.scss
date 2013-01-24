@@ -116,6 +116,7 @@ $pad: 20px;
 
   @include breakpoint(meerkat) {
     width: 100%;
+    padding: 0;
   }
 }
 .col-1-4 {

@@ -391,7 +391,8 @@ table {
   width: 50%; }
   @media (max-width: 768px) {
     .col-1-2 {
-      width: 100%; } }
+      width: 100%;
+      padding: 0; } }
 
 .col-1-4 {
   width: 25%; }
