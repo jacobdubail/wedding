@@ -427,7 +427,8 @@ h3 {
   padding: 4px 9px;
   font-size: 12px;
   text-transform: uppercase;
-  color: #fff; }
+  color: #fff;
+  border: 1px solid #335d66; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -704,13 +705,13 @@ a {
 
 .foxyshop_product_info .product_title a {
   text-decoration: none; }
+.foxyshop_product_info .btn {
+  float: left; }
 
 .foxyshop_variations label {
   text-transform: capitalize; }
   .foxyshop_variations label + select {
     margin-bottom: 15px; }
-.foxyshop_variations .btn {
-  float: left; }
 
 #foxyshop_main_price {
   float: left;

@@ -18,6 +18,10 @@
 			text-decoration: none;
 		}
 	}
+
+	.btn {
+		float: left;
+	}
 }
 
 .foxyshop_variations {
@@ -28,11 +32,9 @@
 			margin-bottom: 15px;
 		}
 	}
-
-	.btn {
-		float: left;
-	}
 }
+
+
 #foxyshop_main_price {
 	float: left;
 	width: 90px;
