@@ -36,6 +36,7 @@
 
 
 #foxyshop_main_price {
+	@include transform( translate( 10px, 3px ) );
 	float: left;
 	width: 90px;
 }

@@ -19,8 +19,8 @@ h3 {
 
 .btn {
 	@include transition(all 1s ease);
-	@include background(linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35)));
-	background-color: rgba(85, 156, 170, .35);
+	@include background(linear-gradient(rgba(0,0,0,0.17), rgba(0,0,0,0.25)));
+	background-color: rgb(85, 156, 170);
 	padding: 4px 9px;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -28,6 +28,6 @@ h3 {
 	border: 1px solid darken( $heading, 20% );
 
 	&:hover {
-		background-color: rgba(97, 158, 152, 0.35);
+		background-color: rgb(97, 158, 152);
 	}
 }
