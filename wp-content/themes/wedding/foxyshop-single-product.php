@@ -45,12 +45,12 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 		foxyshop_product_variations(2);
 
 		//Check Inventory Levels and Display Status (last variable allows backordering of out of stock items)
-		foxyshop_inventory_management("There are only %c item%s left in stock.", "Item is not in stock.", false);
+		//foxyshop_inventory_management("There are only %c item%s left in stock.", "Item is not in stock.", false);
 
 		//Add On Products ($qty [1 or 0], $before_entry, $after_entry)
-		foxyshop_addon_products();
+		//foxyshop_addon_products();
 
-		echo '<button type="submit" name="x:productsubmit" id="productsubmit" class="foxyshop_button">Add To Cart</button>';
+		echo '<input type="submit" name="x:productsubmit" id="productsubmit" class="foxyshop_button btn" value="Add To Cart" />';
 
 		echo '<div id="foxyshop_main_price">';
 			foxyshop_price();

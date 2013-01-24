@@ -418,6 +418,17 @@ h2 {
 h3 {
   font-size: 15px; }
 
+.btn {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #559caa), color-stop(100%, #619e98));
+  background: -webkit-linear-gradient(#559caa, #619e98);
+  background: -moz-linear-gradient(#559caa, #619e98);
+  background: -o-linear-gradient(#559caa, #619e98);
+  background: linear-gradient(#559caa, #619e98);
+  padding: 4px 9px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff; }
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -693,6 +704,17 @@ a {
 
 .foxyshop_product_info .product_title a {
   text-decoration: none; }
+
+.foxyshop_variations label {
+  text-transform: capitalize; }
+  .foxyshop_variations label + select {
+    margin-bottom: 15px; }
+.foxyshop_variations .btn {
+  float: left; }
+
+#foxyshop_main_price {
+  float: left;
+  width: 90px; }
 
 /* PROJECTS */
 .item {

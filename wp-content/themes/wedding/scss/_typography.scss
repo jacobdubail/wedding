@@ -15,3 +15,12 @@ h2 {
 h3 {
   font-size: 15px;
 }
+
+
+.btn {
+	@include background( linear-gradient( $heading, $headingHover ) );
+	padding: 4px 9px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+}

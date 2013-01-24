@@ -39,7 +39,7 @@
         <?php if ( is_front_page() ) : ?>
           <h1>Danielle<small>&amp;</small>Jacob</h1>
         <?php else : ?>
-          <h1><a href="<?php home_url(); ?>/">Danielle<small>&amp;</small>Jacob</a></h1>
+          <h1><a href="<?php echo home_url(); ?>/">Danielle<small>&amp;</small>Jacob</a></h1>
         <?php endif; ?>
         <h2><?php bloginfo('description'); ?></h2>
         <nav class="main-nav">
