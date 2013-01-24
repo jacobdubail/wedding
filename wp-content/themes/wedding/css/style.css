@@ -719,12 +719,15 @@ a {
 
 .foxyshop_product_info .product_title a {
   text-decoration: none; }
+.single .foxyshop_product_info h2 {
+  font-size: 18px; }
 .foxyshop_product_info .btn {
   float: left; }
 
 .foxyshop_variations label {
   text-transform: capitalize; }
-  .foxyshop_variations label + select {
+  .foxyshop_variations label + select,
+  .foxyshop_variations label + input {
     margin-bottom: 15px; }
 
 #foxyshop_main_price {

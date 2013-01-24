@@ -19,6 +19,10 @@
 		}
 	}
 
+	.single & h2 {
+		font-size: 18px;
+	}
+
 	.btn {
 		float: left;
 	}
@@ -28,7 +32,8 @@
 
 	label {
 		text-transform: capitalize;
-		+ select {
+		+ select,
+		+ input {
 			margin-bottom: 15px;
 		}
 	}
