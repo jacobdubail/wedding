@@ -230,3 +230,61 @@ function aq_resize( $url, $width, $height = null, $crop = null, $single = true )
 
   return $image;
 }
+
+
+
+
+//Shows Related Products
+function jtd_foxyshop_related_products ( $sectiontitle = "Related Products", $maxproducts = 3 ) {
+  global $product, $post, $foxyshop_settings;
+
+  $related_order = "";
+  $args          = array('post_type' => 'foxyshop_product', "post__not_in" => array($product['id']));
+  //Native Related Products
+  if ( $foxyshop_settings['related_products_custom'] && $product['related_products'] ) {
+    $args['post__in'] = explode(",",$product['related_products']);
+    $args['posts_per_page'] = -1;
+    if ($related_order = get_post_meta($product['id'], "_related_order", 1)) add_filter('posts_orderby', 'foxyshop_related_order');
+
+  //Tags
+  } else {
+    return;
+  }
+
+  if ( !array_key_exists('orderby', $args) ) $args = array_merge( $args, foxyshop_sort_order_array() );
+  $relatedlist = new WP_Query($args);
+
+  if ( count($relatedlist->posts) > 0 ) {
+
+    $original_product = $product;
+
+    echo '<ul class="foxyshop_related_product_list">';
+    echo '<li class="titleline"><h3>' . $sectiontitle . '</h3></li>';
+
+    while ($relatedlist->have_posts() ) :
+
+      $relatedlist->the_post();
+      $product      = foxyshop_setup_product();
+      $thumbnailSRC = foxyshop_get_main_image(apply_filters('foxyshop_related_products_thumbnail_size',"thumbnail"));
+      $thumb        = aq_resize( $thumbnailSRC, 283, 120, 1, true );
+
+      $write  = '<li class="foxyshop_product_box cf">'."\n";
+      $write .= '<div class="foxyshop_product_image">';
+      $write .= '<a href="' . $product['url'] . '"><img src="' . $thumb . '" alt="' . esc_attr($product['name']) . '" class="foxyshop_main_image" /></a>';
+      $write .= "</div>\n";
+      $write .= '<div class="foxyshop_product_info">';
+      $write .= '<h2><a href="' . $product['url'] . '">' . apply_filters('the_title', $product['name']) . '</a></h2>';
+      $write .= foxyshop_price(0,0);
+      $write .= "</div>\n";
+      //$write .= '<div class="clr"></div>';
+      $write .= "</li>\n";
+      echo apply_filters('foxyshop_related_products_html', $write, $product);
+
+    endwhile;
+    echo "</ul>\n";
+    echo '<div class="clr"></div>';
+    $product = $original_product;
+    wp_reset_postdata();
+  }
+  if ($related_order) remove_filter('posts_orderby', 'foxyshop_related_order');
+}

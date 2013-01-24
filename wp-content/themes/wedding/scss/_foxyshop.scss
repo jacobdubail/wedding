@@ -142,8 +142,10 @@
 
 
   .foxyshop_product_wrap {
+    @extend .foxyshop_product_box;
     float: left;
     width: 33.3%;
+    margin-bottom: $baselineheight;
   }
 }
 
