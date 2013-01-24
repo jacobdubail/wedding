@@ -419,16 +419,23 @@ h3 {
   font-size: 15px; }
 
 .btn {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #559caa), color-stop(100%, #619e98));
-  background: -webkit-linear-gradient(#559caa, #619e98);
-  background: -moz-linear-gradient(#559caa, #619e98);
-  background: -o-linear-gradient(#559caa, #619e98);
-  background: linear-gradient(#559caa, #619e98);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.35)));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35));
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35));
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35));
+  background-color: rgba(85, 156, 170, 0.35);
   padding: 4px 9px;
   font-size: 12px;
   text-transform: uppercase;
   color: #fff;
   border: 1px solid #335d66; }
+  .btn:hover {
+    background-color: rgba(97, 158, 152, 0.35); }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
