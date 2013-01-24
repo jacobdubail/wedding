@@ -324,6 +324,9 @@ table {
   overflow: hidden;
   white-space: nowrap; }
 
+.clear {
+  clear: both; }
+
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */

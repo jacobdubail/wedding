@@ -25,6 +25,10 @@
   white-space: nowrap;
 }
 
+.clear {
+  clear: both;
+}
+
 
 
 /*
@@ -85,7 +89,7 @@ $pad: 20px;
 
 .grid {
   margin: 0 0 $pad 0;
-  
+
   &:after {
     /* Or @extend clearfix */
     content: "";
