@@ -388,7 +388,10 @@ table {
   width: 33.33%; }
 
 .col-1-2 {
-  width: 50%; }
+  width: 100%; }
+  @media (max-width: 768px) {
+    .col-1-2 {
+      width: 50%; } }
 
 .col-1-4 {
   width: 25%; }
@@ -828,7 +831,7 @@ a {
     margin: 0 0 5px; }
   .foxyshop_related_product_list .foxyshop_product_box {
     float: left;
-    width: 31.3%;
+    width: 23%;
     margin: 0 1% 15px; }
     @media (max-width: 768px) {
       .foxyshop_related_product_list .foxyshop_product_box {
@@ -836,6 +839,9 @@ a {
     @media (max-width: 480px) {
       .foxyshop_related_product_list .foxyshop_product_box {
         width: 98%; } }
+    @media (max-width: 1200px) {
+      .foxyshop_related_product_list .foxyshop_product_box {
+        width: 31.3%; } }
 
 /**** Isotope Filtering ****/
 .isotope-item {

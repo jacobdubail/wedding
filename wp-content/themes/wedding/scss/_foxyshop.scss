@@ -169,7 +169,7 @@
   .foxyshop_product_box {
     @extend .foxyshop_product_wrap;
     float: left;
-    width: 31.3%;
+    width: 23%;
     margin: 0 1% 15px;
 
     @include breakpoint(meerkat) {
@@ -177,6 +177,9 @@
     }
     @include breakpoint(snail) {
     	width: 98%;
+    }
+    @include breakpoint(hippo) {
+    	width: 31.3%;
     }
   }
 }
