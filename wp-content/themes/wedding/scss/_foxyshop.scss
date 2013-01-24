@@ -137,6 +137,7 @@
 .foxyshop_related_product_list {
   @extend .cf;
   clear: both;
+  margin: $baselineheight 0;
 
   .titleline {
     @extend h2;

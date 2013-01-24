@@ -780,7 +780,8 @@ a {
       margin-left: -6px; }
 
 .foxyshop_related_product_list {
-  clear: both; }
+  clear: both;
+  margin: 1.41em 0; }
   .foxyshop_related_product_list .foxyshop_product_box {
     float: left;
     width: 33.3%;
