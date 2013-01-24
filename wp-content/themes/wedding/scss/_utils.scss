@@ -114,7 +114,7 @@ $pad: 20px;
 .col-1-2 {
   width: 50%;
 
-  @include breakpoint(meerkat) {
+  @include breakpoint(lizard) {
     width: 100%;
     padding: 0;
   }
