@@ -37,6 +37,11 @@
 			margin-bottom: 15px;
 		}
 	}
+
+	input.foxyshop_quantity {
+		width: 30px;
+		border: 1px solid darken( $heading, 20%);
+	}
 }
 
 
