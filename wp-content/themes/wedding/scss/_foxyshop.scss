@@ -171,6 +171,13 @@
     float: left;
     width: 31.3%;
     margin: 0 1% 15px;
+
+    @include breakpoint(meerkat) {
+    	width: 48%;
+    }
+    @include breakpoint(snail) {
+    	width: 98%;
+    }
   }
 }
 

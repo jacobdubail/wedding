@@ -830,6 +830,12 @@ a {
     float: left;
     width: 31.3%;
     margin: 0 1% 15px; }
+    @media (max-width: 768px) {
+      .foxyshop_related_product_list .foxyshop_product_box {
+        width: 48%; } }
+    @media (max-width: 480px) {
+      .foxyshop_related_product_list .foxyshop_product_box {
+        width: 98%; } }
 
 /**** Isotope Filtering ****/
 .isotope-item {
