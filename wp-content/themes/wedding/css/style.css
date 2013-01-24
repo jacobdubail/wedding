@@ -777,7 +777,7 @@ a {
     -webkit-box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
     box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0; }
     @media (max-width: 600px) {
-      .filters li {
+      .filters li:first-child {
         display: none; } }
   .filters a {
     text-decoration: none;
