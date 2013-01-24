@@ -134,6 +134,20 @@
 
 
 
+.foxyshop_related_product_list {
+  @extend .cf;
+  clear: both;
+
+  .titleline {
+    @extend h2;
+  }
+  .foxyshop_product_box {
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+  }
+}
+
 
 
 
