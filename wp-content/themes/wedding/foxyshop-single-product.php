@@ -44,7 +44,7 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 		//Show Variations (showQuantity: 0 = Do Not Show Qty, 1 = Show Before Variations, 2 = Show Below Variations)
 		foxyshop_product_variations(2);
 
-		//Check Inventory Levels and Display Status (last variable allows backordering of out of stock items)85, 156, 170
+		//Check Inventory Levels and Display Status (last variable allows backordering of out of stock items)
 		//foxyshop_inventory_management("There are only %c item%s left in stock.", "Item is not in stock.", false);
 
 		//Add On Products ($qty [1 or 0], $before_entry, $after_entry)
