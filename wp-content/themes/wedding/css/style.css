@@ -505,6 +505,10 @@ a {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
     padding: 50px;
     background: rgba(255, 255, 255, 0.8); }
+    .no-rgba .page-wrap .centered {
+      background: transparent;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+      zoom: 1; }
     .home .page-wrap .centered {
       max-width: 550px; }
     body:hover .page-wrap .centered {

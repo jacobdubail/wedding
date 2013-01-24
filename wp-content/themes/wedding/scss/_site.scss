@@ -73,6 +73,13 @@ a {
     background: rgba(white, .8);
 
 
+    .no-rgba & {
+      background:transparent;
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+      zoom: 1;
+    }
+
+
 
     .home & {
       max-width: 550px;
@@ -83,9 +90,9 @@ a {
       @include transition(all .3s ease);
     }
 
-    @include breakpoint(meerkat) { 
+    @include breakpoint(meerkat) {
       @include opacity(1);
-      width: 82%; 
+      width: 82%;
       padding: 30px;
     };
 
@@ -138,7 +145,7 @@ a {
     small {
       margin: 0 1px;
     }
-    @include breakpoint(meerkat) { 
+    @include breakpoint(meerkat) {
       text-align:center;
       line-height:.6;
       small {
@@ -157,7 +164,7 @@ a {
     color: hsl(190, 33%, 13%);
     text-shadow: 0 1px 0 white;
     @include facit();
-    
+
     @include breakpoint(meerkat) {
       font-size:22px;
       letter-spacing:0;
@@ -211,7 +218,7 @@ a {
   &:hover {
     @include opacity(1);
   }
-  @include breakpoint(snail) { 
+  @include breakpoint(snail) {
     display:none;
   }
 
@@ -274,8 +281,8 @@ a {
           top: 5px;
           left: 8px;
           border-top: 6px solid transparent;
-          border-bottom: 6px solid transparent; 
-          border-right: 6px solid #fff; 
+          border-bottom: 6px solid transparent;
+          border-right: 6px solid #fff;
         }
       }
       &.up {
