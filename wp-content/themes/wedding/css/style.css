@@ -725,6 +725,10 @@ a {
   background: rgba(255, 255, 255, 0.4);
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.35); }
+  .no-rgba .foxyshop_product_wrap, .no-rgba .foxyshop_related_product_list .foxyshop_product_box, .foxyshop_related_product_list .no-rgba .foxyshop_product_box {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66FFFFFF,endColorstr=#66FFFFFF);
+    zoom: 1; }
 
 .foxyshop_product_info .product_title a {
   text-decoration: none; }
