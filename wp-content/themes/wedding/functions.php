@@ -242,9 +242,9 @@ function jtd_foxyshop_related_products ( $sectiontitle = "Related Products", $ma
   $args          = array('post_type' => 'foxyshop_product', "post__not_in" => array($product['id']));
   //Native Related Products
   if ( $foxyshop_settings['related_products_custom'] && $product['related_products'] ) {
-    $args['post__in'] = explode(",",$product['related_products']);
+    $args['post__in']       = explode(",",$product['related_products']);
     $args['posts_per_page'] = -1;
-    if ($related_order = get_post_meta($product['id'], "_related_order", 1)) add_filter('posts_orderby', 'foxyshop_related_order');
+    if ($related_order      = get_post_meta($product['id'], "_related_order", 1)) add_filter('posts_orderby', 'foxyshop_related_order');
 
   //Tags
   } else {
@@ -267,6 +267,8 @@ function jtd_foxyshop_related_products ( $sectiontitle = "Related Products", $ma
       $product      = foxyshop_setup_product();
       $thumbnailSRC = foxyshop_get_main_image(apply_filters('foxyshop_related_products_thumbnail_size',"thumbnail"));
       $thumb        = aq_resize( $thumbnailSRC, 283, 120, 1, true );
+
+      echo $thumb;
 
       $write  = '<li class="foxyshop_product_box cf">'."\n";
       $write .= '<div class="foxyshop_product_image">';
