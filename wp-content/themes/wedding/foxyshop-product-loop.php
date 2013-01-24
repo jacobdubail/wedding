@@ -28,7 +28,7 @@ if (!$product['hide_product']) {
 		}
 	}
 
-	echo '<li class="foxyshop_product_box item '.$klass.' ">';
+	echo '<li class="foxyshop_product_wrap item '.$klass.' ">';
 
 	//Show Image on Left
 	echo '<div class="foxyshop_product_image">';
