@@ -265,10 +265,8 @@ function jtd_foxyshop_related_products ( $sectiontitle = "Related Products", $ma
 
       $relatedlist->the_post();
       $product      = foxyshop_setup_product();
-      $thumbnailSRC = foxyshop_get_main_image(apply_filters('foxyshop_related_products_thumbnail_size',"thumbnail"));
+      $thumbnailSRC = foxyshop_get_main_image(apply_filters('foxyshop_related_products_thumbnail_size',"large"));
       $thumb        = aq_resize( $thumbnailSRC, 283, 120, 1, true );
-
-      echo $thumb;
 
       $write  = '<li class="foxyshop_product_box cf">'."\n";
       $write .= '<div class="foxyshop_product_image">';
