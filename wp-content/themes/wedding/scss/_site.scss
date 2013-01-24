@@ -184,6 +184,10 @@ a {
     color: #fff;
   }
 
+  @include breakpoint(meerkat) {
+    display: none;
+  }
+
 }
 
 

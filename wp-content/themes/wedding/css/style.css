@@ -599,6 +599,9 @@ a {
   #content_toggle:hover {
     background: #99c3cc;
     color: #fff; }
+  @media (max-width: 768px) {
+    #content_toggle {
+      display: none; } }
 
 #controls {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
