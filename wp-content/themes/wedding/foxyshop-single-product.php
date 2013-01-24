@@ -60,7 +60,7 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 	echo '</div>';
 	echo "<div class='clear'></div>";
 
-	jtd_foxyshop_related_products("Related Products");
+	jtd_foxyshop_related_products("Related Adventures");
 
 	echo '</form>';
 

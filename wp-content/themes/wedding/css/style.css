@@ -415,6 +415,9 @@ h2 {
   font-size: 16px;
   margin: 0 0 7px; }
 
+h3 {
+  font-size: 15px; }
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -786,6 +789,8 @@ a {
   clear: both;
   margin: 1.41em 0;
   padding: 0; }
+  .foxyshop_related_product_list .titleline h3 {
+    margin: 0 0 5px; }
   .foxyshop_related_product_list .foxyshop_product_box {
     float: left;
     width: 31.3%;

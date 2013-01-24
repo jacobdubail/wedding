@@ -140,6 +140,10 @@
   margin: $baselineheight 0;
   padding: 0;
 
+  .titleline h3 {
+    margin: 0 0 5px;
+  }
+
 
   .foxyshop_product_box {
     @extend .foxyshop_product_wrap;
