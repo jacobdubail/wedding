@@ -569,7 +569,7 @@ a {
           font-weight: 300; } }
     @media (max-width: 480px) {
       .header h1 {
-        font-size: 50px; } }
+        font-size: 44px; } }
   .header h2 {
     text-transform: uppercase;
     margin: 6px 0 10px;
@@ -782,6 +782,10 @@ a {
   margin: 1.41em 0;
   padding: 0;
   font-size: 0; }
+  @media (max-width: 480px) {
+    .filters {
+      margin-left: -10px;
+      margin-right: -10px; } }
   .filters li {
     list-style: none;
     display: -moz-inline-stack;
@@ -801,6 +805,9 @@ a {
     @media (max-width: 600px) {
       .filters li:first-child {
         display: none; } }
+    @media (max-width: 480px) {
+      .filters li {
+        font-size: 12px; } }
   .filters a {
     text-decoration: none;
     padding: 3px 5px;
