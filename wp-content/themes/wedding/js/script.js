@@ -101,7 +101,7 @@ function get_current_filter() {
   var hash = window.location.hash;
   if ( hash ) {
     $filters.find( '.' + hash.substring(1) ).trigger('click');
-    window.location.hash = '';
+    // window.location.hash = '';
   }
 }
 get_current_filter();
@@ -127,6 +127,9 @@ function set_current_filter() {
   }
 }
 set_current_filter();
+
+
+
 
 
 
