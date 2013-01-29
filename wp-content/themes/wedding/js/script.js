@@ -80,7 +80,7 @@ $(window).smartresize(function(){
 $filters.on( 'click', 'a', function(e) {
     var $this    = $(this),
         selector = $this.attr('data-filter');
-    e.preventDefault();
+    //e.preventDefault();
 
     $container.isotope({ filter: selector });
 
