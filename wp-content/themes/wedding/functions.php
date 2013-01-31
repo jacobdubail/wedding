@@ -39,8 +39,8 @@
     global $post;
     foreach((get_the_category($post->ID)) as $category)
       $classes [] = 'cat-' . $category->cat_ID . '-id';
-    foreach((get_the_terms($post->ID, 'foxyshop_categories')) as $category)
-      $classes [] = $category->slug;
+  //  foreach((get_the_terms($post->ID, 'foxyshop_categories')) as $category)
+  //    $classes [] = $category->slug;
     return $classes;
   }
   add_filter('post_class', 'category_id_class');
@@ -51,13 +51,13 @@
     wp_deregister_script('jquery');
     wp_deregister_script( 'l10n' );
 
-    $jQuery = "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js";
+    $jQuery = "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.9/jquery.min.js";
     $test   = @fopen($jQuery,'r');
     if ( $test === false ) {
       $jQuery = get_template_directory_uri() . '/js/jquery.min.js';
     }
 
-    wp_register_script('jquery', $jQuery, false, '1.8');
+    wp_register_script('jquery', $jQuery, false, '1.9');
     wp_enqueue_script('jquery');
 
     wp_register_script('wedding_plugins', '/wp-content/themes/wedding/js/plugins.min.js', array('jquery'), '1', true );
@@ -66,7 +66,7 @@
     wp_register_script('wedding_functions', '/wp-content/themes/wedding/js/script.min.js', array('jquery', 'wedding_plugins'), '1', true );
     wp_enqueue_script('wedding_functions');
 
-    wp_register_style('wedding_styles', '/wp-content/themes/wedding/css/style.css', '', '1', 'all');
+    wp_register_style('wedding_styles', '/wp-content/themes/wedding/css/style.css', '', '1.1', 'all');
     wp_enqueue_style('wedding_styles');
 
   }

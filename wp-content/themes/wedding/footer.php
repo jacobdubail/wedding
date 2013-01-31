@@ -4,7 +4,7 @@
         <small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
       </footer>
 
-      <a href="#" id="content_toggle">x</a>
+      <span id="content_toggle"><a href="#"></a></span>
 
     </div>
 

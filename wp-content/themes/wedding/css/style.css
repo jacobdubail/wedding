@@ -420,11 +420,35 @@ h1, h2, h3, h4, h5 {
   margin: 0 0 1.41em; }
 
 h2 {
-  font-size: 16px;
-  margin: 0 0 7px; }
+  font-size: 22px;
+  margin: 1.41em 0 5px;
+  font-family: "jaf-facitweb",sans-serif;
+  font-weight: 200;
+  color: #555555; }
 
 h3 {
-  font-size: 15px; }
+  font-size: 18px;
+  margin: 1.41em 0 5px;
+  font-family: "jaf-facitweb",sans-serif;
+  font-weight: 200; }
+
+h4 {
+  font-size: 16px;
+  margin: 0 0 5px;
+  font-family: "jaf-facitweb",sans-serif;
+  font-weight: 200; }
+
+h5 {
+  font-size: 14px;
+  margin: 0 0 5px;
+  font-weight: 400;
+  font-family: "jaf-facitweb",sans-serif; }
+
+a {
+  text-decoration: none; }
+
+p, address {
+  margin: 0 0 1.41em; }
 
 .btn {
   -webkit-transition: all 0.2s ease;
@@ -444,6 +468,81 @@ h3 {
   border: 1px solid #335d66; }
   .btn:hover {
     background-color: #335e66; }
+
+ul.hearts > li {
+  list-style: none;
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 5px; }
+  ul.hearts > li:before {
+    content: '\2764';
+    color: #559caa;
+    font-size: 12px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    text-shadow: 1px 1px 0 white; }
+
+.entry p:first-child {
+  font-size: 110%; }
+
+[class*='ico-'] {
+  font-family: sans-serif;
+  position: relative; }
+
+.ico-ferry:before {
+  content: '\26f4'; }
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  height: 40px; }
+  .admin-bar .main-nav {
+    top: 28px; }
+  .main-nav ul {
+    margin: 0 auto;
+    padding: 0 3%;
+    width: 75%;
+    max-width: 1350px;
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+    text-indent: 0; }
+  .main-nav li {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    width: auto; }
+    .main-nav li a {
+      display: block;
+      margin: 0 10px;
+      padding: 10px;
+      white-space: nowrap;
+      text-decoration: none;
+      color: #555555;
+      font-family: "jaf-facitweb",sans-serif;
+      font-size: 34px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      font-size: 13px;
+      word-spacing: 0;
+      letter-spacing: 0;
+      text-indent: 0; }
+      .main-nav li a:hover {
+        color: #619e98; }
+    .main-nav li.current-menu-item a {
+      background: #559caa;
+      color: #fff;
+      pointer-events: none;
+      cursor: default; }
+      .main-nav li.current-menu-item a:hover {
+        color: #fff; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -487,7 +586,7 @@ a {
       left: 25px;
       text-indent: 50px;
       white-space: nowrap; }
-  .page-wrap:before {
+  .home .page-wrap:before {
     content: '';
     display: inline-block;
     height: 100%;
@@ -506,6 +605,7 @@ a {
     width: 75%;
     max-width: 1350px;
     font-weight: 300;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
     padding: 50px;
     background: rgba(255, 255, 255, 0.8); }
@@ -527,22 +627,10 @@ a {
     @media (max-width: 600px) {
       .page-wrap .centered {
         width: 96%; } }
-    .page-wrap .centered ul.hearts > li {
-      list-style: none;
-      position: relative;
-      padding-left: 16px;
-      margin-bottom: 5px; }
-      .page-wrap .centered ul.hearts > li:before {
-        content: '\2764';
-        color: #559caa;
-        font-size: 12px;
-        position: absolute;
-        top: 4px;
-        left: 0;
-        text-shadow: 1px 1px 0 white; }
 
 .header {
-  text-align: center; }
+  text-align: center;
+  padding-top: 30px; }
   .header h1 {
     font-size: 70px;
     font-weight: 700;
@@ -561,7 +649,6 @@ a {
       margin: 0 1px; }
     @media (max-width: 768px) {
       .header h1 {
-        text-align: center;
         line-height: .6; }
         .header h1 small {
           line-height: 1;
@@ -582,124 +669,51 @@ a {
     @media (max-width: 768px) {
       .header h2 {
         font-size: 22px;
-        letter-spacing: 0;
-        text-align: center;
-        margin-top: 20px; } }
+        letter-spacing: 0; } }
 
 #content_toggle {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  text-decoration: none;
-  font-family: "jaf-facitweb",sans-serif;
-  font-size: 18px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-indent: 0; }
-  #content_toggle:hover {
-    background: #99c3cc;
-    color: #fff; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 501;
+  width: 75%;
+  max-width: 1350px;
+  margin: 0 auto; }
+  .home #content_toggle {
+    position: absolute;
+    width: 100%; }
+  .content_toggle #content_toggle {
+    position: static; }
+  #content_toggle a {
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    font-family: "jaf-facitweb",sans-serif;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-indent: 0;
+    z-index: 501; }
+    #content_toggle a:before {
+      content: 'x'; }
+    #content_toggle a.active:before {
+      content: '+'; }
+    #content_toggle a:hover {
+      background: #99c3cc;
+      color: #fff; }
+    .content_toggle #content_toggle a {
+      top: 5px;
+      right: 5px; }
   @media (max-width: 768px) {
     #content_toggle {
       display: none; } }
-
-#controls {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 300;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
-  position: absolute;
-  background: #fff;
-  z-index: 10;
-  bottom: 25px;
-  right: 25px;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  text-align: center; }
-  #controls:hover {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1; }
-  @media (max-width: 480px) {
-    #controls {
-      display: none; } }
-  #controls.active {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-    width: 130px;
-    height: 60px; }
-    #controls.active a {
-      display: none; }
-    #controls.active ul {
-      display: block; }
-  #controls a {
-    text-decoration: none; }
-  #controls ul {
-    display: none;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    top: -5px;
-    left: 3px; }
-    #controls ul li {
-      width: 22px;
-      height: 22px;
-      border-radius: 3px;
-      background: #d7d7d7;
-      list-style: none;
-      margin: 1px;
-      display: inline-block;
-      position: relative;
-      top: 26px;
-      text-indent: 23px;
-      overflow: hidden;
-      white-space: nowrap; }
-      #controls ul li:before {
-        content: '';
-        position: absolute;
-        top: 8px;
-        left: 5px;
-        width: 0;
-        height: 0; }
-      #controls ul li:hover, #controls ul li.hover {
-        background: #494949; }
-      #controls ul li.left {
-        left: 14px; }
-        #controls ul li.left:before {
-          top: 5px;
-          left: 8px;
-          border-top: 6px solid transparent;
-          border-bottom: 6px solid transparent;
-          border-right: 6px solid white; }
-      #controls ul li.up {
-        top: 0;
-        left: 12px; }
-        #controls ul li.up:before {
-          border-left: 6px solid transparent;
-          border-right: 6px solid transparent;
-          border-bottom: 6px solid white; }
-      #controls ul li.down {
-        right: 16px; }
-        #controls ul li.down:before {
-          top: 9px;
-          border-left: 6px solid transparent;
-          border-right: 6px solid transparent;
-          border-top: 6px solid white; }
-      #controls ul li.right {
-        right: 18px; }
-        #controls ul li.right:before {
-          top: 5px;
-          left: 9px;
-          border-top: 6px solid transparent;
-          border-bottom: 6px solid transparent;
-          border-left: 6px solid white; }
 
 .footer {
   display: none; }
@@ -916,3 +930,194 @@ a {
   -ms-transition-duration: 0s;
   -o-transition-duration: 0s;
   transition-duration: 0s; }
+
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden; }
+
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+#cboxMiddleLeft, #cboxBottomLeft {
+  clear: left; }
+
+#cboxContent {
+  position: relative; }
+
+#cboxLoadedContent {
+  overflow: auto; }
+
+#cboxTitle {
+  margin: 0; }
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+  cursor: pointer; }
+
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block;
+  max-width: none; }
+
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0; }
+
+#colorbox, #cboxContent, #cboxLoadedContent {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; }
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay {
+  background: url(../i/overlay.png) repeat 0 0; }
+
+#cboxTopLeft {
+  width: 21px;
+  height: 21px;
+  background: url(../i/controls.png) no-repeat -101px 0; }
+
+#cboxTopRight {
+  width: 21px;
+  height: 21px;
+  background: url(../i/controls.png) no-repeat -130px 0; }
+
+#cboxBottomLeft {
+  width: 21px;
+  height: 21px;
+  background: url(../i/controls.png) no-repeat -101px -29px; }
+
+#cboxBottomRight {
+  width: 21px;
+  height: 21px;
+  background: url(../i/controls.png) no-repeat -130px -29px; }
+
+#cboxMiddleLeft {
+  width: 21px;
+  background: url(../i/controls.png) left top repeat-y; }
+
+#cboxMiddleRight {
+  width: 21px;
+  background: url(../i/controls.png) right top repeat-y; }
+
+#cboxTopCenter {
+  height: 21px;
+  background: url(../i/border.png) 0 0 repeat-x; }
+
+#cboxBottomCenter {
+  height: 21px;
+  background: url(../i/border.png) 0 -29px repeat-x; }
+
+#cboxContent {
+  background: #fff;
+  overflow: hidden; }
+
+.cboxIframe {
+  background: #fff; }
+
+#cboxError {
+  padding: 50px;
+  border: 1px solid #cccccc; }
+
+#cboxLoadedContent {
+  margin-bottom: 28px; }
+
+#cboxTitle {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #949494; }
+
+#cboxCurrent {
+  position: absolute;
+  bottom: 4px;
+  left: 58px;
+  color: #949494; }
+
+#cboxSlideshow {
+  position: absolute;
+  bottom: 4px;
+  right: 30px;
+  color: #0092ef; }
+
+#cboxPrevious {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(../i/controls.png) no-repeat -75px 0;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+#cboxPrevious:hover {
+  background-position: -75px -25px; }
+
+#cboxNext {
+  position: absolute;
+  bottom: 0;
+  left: 27px;
+  background: url(../i/controls.png) no-repeat -50px 0;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+#cboxNext:hover {
+  background-position: -50px -25px; }
+
+#cboxLoadingOverlay {
+  background: url(../i/loading_background.png) no-repeat center center; }
+
+#cboxLoadingGraphic {
+  background: url(../i/loading.gif) no-repeat center center; }
+
+#cboxClose {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(../i/controls.png) no-repeat -25px 0;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px; }
+
+#cboxClose:hover {
+  background-position: -25px -25px; }
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); }

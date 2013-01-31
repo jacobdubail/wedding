@@ -44,7 +44,7 @@
 
   height: 0;
   width: 0;
-}       
+}
 
 @mixin sans-serif() {
   font-family: "proxima-nova", sans-serif;
@@ -61,26 +61,5 @@
   font-family: "jaf-facitweb",sans-serif;
   font-size: 34px;
   letter-spacing:2px;
-  word-spacing:2px;
-}
-
-@mixin clarendon() {
-  font-family: "superclarendon",serif;
-  font-size:29px;
-  letter-spacing:1px;
-  word-spacing:1px;
-}
-
-@mixin skolar() {
-  font-family: "skolar",serif;
-  font-size:32px;
-  letter-spacing:4px;
-  word-spacing:1px;
-}
-
-@mixin chap() {
-  font-family: "chaparral-pro",sans-serif;
-  font-size:35px;
-  letter-spacing:3px;
   word-spacing:2px;
 }

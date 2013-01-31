@@ -1,0 +1,57 @@
+.main-nav {
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  z-index: 500;
+  height: 40px;
+
+  .admin-bar & {
+    top: 28px;
+  }
+
+  ul {
+    margin: 0 auto;
+    padding:0 3%;
+    width: 75%;
+    max-width: 1350px;
+    background: rgba(255,255,255,0.9);
+    -webkit-box-shadow: 0 0 3px rgba(black, 0.35);
+    box-shadow: 0 0 3px rgba(black, 0.35);
+    text-indent: 0;
+  }
+  li {
+    @include inline-block;
+    width: auto;
+
+    a {
+      display: block;
+      margin: 0 10px;
+      padding: 10px;
+      white-space: nowrap;
+      text-decoration: none;
+      color: $c5;
+      //text-transform: uppercase;
+      @include facit;
+      font-size: 13px;
+      word-spacing: 0;
+      letter-spacing: 0;
+      text-indent: 0;
+
+      &:hover {
+        color: $headingHover;
+      }
+    }
+
+    &.current-menu-item a {
+      background: $heading;
+      color: #fff;
+      pointer-events: none;
+      cursor: default;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

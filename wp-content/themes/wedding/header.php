@@ -46,9 +46,12 @@
           <h1><a href="<?php echo home_url(); ?>/">Danielle<small>&amp;</small>Jacob</a></h1>
         <?php endif; ?>
         <h2><?php bloginfo('description'); ?></h2>
-        <nav class="main-nav">
-          <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
-        </nav>
+
+        <?php if ( !is_front_page() ) : ?>
+          <nav class="main-nav">
+            <?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'container' => '' ) ); ?>
+          </nav>
+        <?php endif; ?>
       </header>
 
 

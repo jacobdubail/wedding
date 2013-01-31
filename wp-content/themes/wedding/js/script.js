@@ -131,7 +131,10 @@ set_current_filter();
 
 
 
-
+$(".entry img").parent().colorbox({
+  maxWidth  : '90%',
+  maxHeight : '90%'
+});
 
 
 
@@ -174,16 +177,14 @@ $("body").on( 'keydown', function (event) {
     }
 });
 
-$("#content_toggle").on('hover', function() {
-  $("body").toggleClass('toggle_hover');
-}).on('click', function() {
+$("#content_toggle").on('click', 'a', function() {
   $(".page-wrap").toggleClass('content_toggle');
-  $(this).text('+');
+  $(this).toggleClass('active');
 });
 
-$("#controls").on('hover', function() {
-  $(this)
-    .toggleClass('active');
-});
+// $("#controls").on('hover', function() {
+//   $(this)
+//     .toggleClass('active');
+// });
 
 
