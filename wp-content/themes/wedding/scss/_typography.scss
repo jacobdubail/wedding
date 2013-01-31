@@ -42,7 +42,7 @@ p, address {
 	margin: 0 0 $baselineheight;
 }
 
-
+.button,
 .btn {
 	@include transition(all .2s ease);
 	@include background(linear-gradient(rgba(0,0,0,0.17), rgba(0,0,0,0.35)));

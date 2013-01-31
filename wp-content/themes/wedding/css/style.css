@@ -450,6 +450,7 @@ a {
 p, address {
   margin: 0 0 1.41em; }
 
+.button,
 .btn {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -466,6 +467,7 @@ p, address {
   text-transform: uppercase;
   color: #fff;
   border: 1px solid #335d66; }
+  .button:hover,
   .btn:hover {
     background-color: #335e66; }
 
