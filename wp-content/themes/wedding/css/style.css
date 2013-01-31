@@ -701,6 +701,8 @@ a {
     text-align: center;
     text-indent: 0;
     z-index: 501; }
+    .admin-bar #content_toggle a {
+      top: 28px; }
     #content_toggle a:before {
       content: 'x'; }
     #content_toggle a.active:before {

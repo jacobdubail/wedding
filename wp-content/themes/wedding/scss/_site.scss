@@ -190,6 +190,10 @@ a {
     text-indent:0;
     z-index: 501;
 
+    .admin-bar & {
+      top: 28px;
+    }
+
     &:before {
       content: 'x';
     }
