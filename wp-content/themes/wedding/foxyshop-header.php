@@ -11,3 +11,7 @@
   <li><a href="#dining" data-filter=".dining" class="dining">Dining</a></li>
   <li><a href="#transportation" data-filter=".transportation" class="transportation">Transportation</a></li>
 </ul>
+
+<?php if ( is_post_type_archive() ) : ?>
+  HELLO
+<?php endif; ?>

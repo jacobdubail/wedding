@@ -315,12 +315,12 @@ table {
   position: relative;
   z-index: 1000; }
 
-.cf, .main-content, .foxyshop_related_product_list {
+.cf, .main-content, .foxyshop_related_product_list, .gform_wrapper, .ginput_complex {
   *zoom: 1; }
-  .cf:before, .main-content:before, .foxyshop_related_product_list:before, .cf:after, .main-content:after, .foxyshop_related_product_list:after {
+  .cf:before, .main-content:before, .foxyshop_related_product_list:before, .gform_wrapper:before, .ginput_complex:before, .cf:after, .main-content:after, .foxyshop_related_product_list:after, .gform_wrapper:after, .ginput_complex:after {
     content: " ";
     display: table; }
-  .cf:after, .main-content:after, .foxyshop_related_product_list:after {
+  .cf:after, .main-content:after, .foxyshop_related_product_list:after, .gform_wrapper:after, .ginput_complex:after {
     clear: both; }
 
 .ir {
@@ -505,6 +505,10 @@ ul.hearts > li {
   .admin-bar .main-nav {
     top: 28px; }
   .main-nav ul {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     margin: 0 auto;
     padding: 0 3%;
     width: 75%;
@@ -513,6 +517,12 @@ ul.hearts > li {
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
     text-indent: 0; }
+    @media (max-width: 768px) {
+      .main-nav ul {
+        width: 82%; } }
+    @media (max-width: 600px) {
+      .main-nav ul {
+        width: 96%; } }
   .main-nav li {
     display: -moz-inline-stack;
     display: inline-block;
@@ -1125,3 +1135,111 @@ a {
 .cboxIE #cboxMiddleLeft,
 .cboxIE #cboxMiddleRight {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); }
+
+.gform_wrapper {
+  float: left;
+  width: 45%;
+  min-width: 400px;
+  max-width: 500px; }
+  @media (max-width: 600px) {
+    .gform_wrapper {
+      min-width: 0;
+      float: none;
+      width: 100%; } }
+
+.gform_fields {
+  margin: 20px 0 0;
+  padding: 0; }
+
+.gfield {
+  position: relative;
+  margin: 0 0 1.41em; }
+  .gfield .gfield_label {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    margin-bottom: 3px; }
+  .gfield .gfield_required {
+    display: none; }
+
+.gfield_checkbox,
+.gfield_radio {
+  margin: 5px 0;
+  padding: 0 0 0 10px; }
+  .gfield_checkbox li,
+  .gfield_radio li {
+    margin: 0 0 5px; }
+  .gfield_checkbox label,
+  .gfield_radio label {
+    margin: 0 0 0 4px; }
+
+.ginput_complex .ginput_left {
+  margin-right: 4%; }
+.ginput_complex .ginput_right,
+.ginput_complex .ginput_left {
+  display: block;
+  float: left;
+  width: 48%;
+  position: relative; }
+  @media (max-width: 600px) {
+    .ginput_complex .ginput_right,
+    .ginput_complex .ginput_left {
+      float: none;
+      width: 100%;
+      margin: 0 0 10px; } }
+  .ginput_complex .ginput_right input,
+  .ginput_complex .ginput_right label,
+  .ginput_complex .ginput_left input,
+  .ginput_complex .ginput_left label {
+    display: block; }
+  .ginput_complex .ginput_right label,
+  .ginput_complex .ginput_left label {
+    margin-top: 2px;
+    color: #666666; }
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=search],
+input[type=url],
+textarea {
+  padding: 5px 10px;
+  background: #f9f9f9;
+  background: rgba(255, 255, 255, 0.7);
+  color: #999999;
+  border: none;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+  width: 100%; }
+  .no-boxshadow input[type=text], .no-boxshadow
+  input[type=email], .no-boxshadow
+  input[type=password], .no-boxshadow
+  input[type=tel], .no-boxshadow
+  input[type=search], .no-boxshadow
+  input[type=url], .no-boxshadow
+  textarea {
+    border: 1px solid #bbbbbb; }
+  input[type=text]:focus,
+  input[type=email]:focus,
+  input[type=password]:focus,
+  input[type=tel]:focus,
+  input[type=search]:focus,
+  input[type=url]:focus,
+  textarea:focus {
+    background: #fff;
+    color: #333333;
+    outline: none;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
+    .no-boxshadow input[type=text]:focus, .no-boxshadow
+    input[type=email]:focus, .no-boxshadow
+    input[type=password]:focus, .no-boxshadow
+    input[type=tel]:focus, .no-boxshadow
+    input[type=search]:focus, .no-boxshadow
+    input[type=url]:focus, .no-boxshadow
+    textarea:focus {
+      border: 1px solid #888888; }

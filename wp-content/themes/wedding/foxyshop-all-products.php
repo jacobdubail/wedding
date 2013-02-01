@@ -3,18 +3,23 @@
 If you need to edit this template, do not edit the version in the plugin directory. Place a copy in your template folder and edit it there.
 This will allow you to upgrade FoxyShop without breaking your customizations. More details here: http://www.foxy-shop.com/documentation/theme-customization/
 -----------------------------------
-*/  
+*/
 
-	get_header(); 
+	get_header();
 
 	global $product;
 
-	foxyshop_include('header'); 
-	
+	foxyshop_include('header');
+
+	$pid     = 167;
+	$welcome = get_page($pid);
+
+	echo apply_filters( 'the_content', $welcome->post_content );
+
 	//Run the query for all products in this category
 	global $paged, $wp_query;
 	$paged = get_query_var('page');
-	$args  = array('post_type' => 'foxyshop_product', 'post_status' => 'publish', 'posts_per_page' => foxyshop_products_per_page(), 'paged' => get_query_var('page'));
+	$args  = array( 'post_type' => 'foxyshop_product', 'post_status' => 'publish', 'posts_per_page' => foxyshop_products_per_page(), 'paged' => get_query_var('page'));
 	$args  = array_merge($args,foxyshop_sort_order_array());
 	query_posts($args);
 	echo '<ul class="foxyshop_product_list grid" id="masonry">';
@@ -26,13 +31,13 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 
 	endwhile;
 	echo '</ul>';
-	
+
 	//Pagination
 	foxyshop_get_pagination();
-	
-	foxyshop_include('footer'); 
+
+	foxyshop_include('footer');
 
 
-get_footer(); 
+get_footer();
 
 ?>

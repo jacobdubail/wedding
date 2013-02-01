@@ -11,6 +11,7 @@
   }
 
   ul {
+    @include transition(all .3s ease);
     margin: 0 auto;
     padding:0 3%;
     width: 75%;
@@ -19,6 +20,14 @@
     -webkit-box-shadow: 0 0 3px rgba(black, 0.35);
     box-shadow: 0 0 3px rgba(black, 0.35);
     text-indent: 0;
+
+    @include breakpoint(meerkat) {
+      width: 82%;
+    }
+    @include breakpoint(lizard) {
+      width: 96%;
+    }
+
   }
   li {
     @include inline-block;
