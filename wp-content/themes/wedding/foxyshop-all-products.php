@@ -14,7 +14,9 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 	$pid     = 167;
 	$welcome = get_page($pid);
 
-	echo apply_filters( 'the_content', $welcome->post_content );
+	echo "<div class='welcome well'><span class='close'></span>";
+	//echo apply_filters( 'the_content', $welcome->post_content );
+	echo "</div>";
 
 	//Run the query for all products in this category
 	global $paged, $wp_query;
