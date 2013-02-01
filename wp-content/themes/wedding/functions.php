@@ -307,3 +307,9 @@ function my_password_form() {
     return $o;
 }
 add_filter( 'the_password_form', 'my_password_form' );
+
+
+add_filter('protected_title_format', 'blank');
+function blank($title) {
+  return '%s';
+}
