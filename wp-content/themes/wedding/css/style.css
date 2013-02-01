@@ -1200,6 +1200,9 @@ a {
     margin-top: 2px;
     color: #666666; }
 
+.protected-post-form p {
+  width: 300px; }
+
 input[type=text],
 input[type=email],
 input[type=password],

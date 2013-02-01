@@ -288,3 +288,22 @@ function jtd_foxyshop_related_products ( $sectiontitle = "Related Products", $ma
   }
   if ($related_order) remove_filter('posts_orderby', 'foxyshop_related_order');
 }
+
+
+
+function my_password_form() {
+    global $post;
+    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+    $o     = '<form class="protected-post-form" action="' . get_option( 'siteurl' ) . '/wp-login.php?action=postpass" method="post">
+    <h4>To view this protected content, please enter the password below:</h4>
+    <p class="gfield">
+      <label for="' . $label . '">' . __( "Password:" ) . ' </label>
+      <input name="post_password" id="' . $label . '" type="password" size="20" />
+    </p>
+    <input type="submit" name="Submit" class="btn" value="' . esc_attr__( "Submit" ) . '" />
+
+    </form>
+    ';
+    return $o;
+}
+add_filter( 'the_password_form', 'my_password_form' );

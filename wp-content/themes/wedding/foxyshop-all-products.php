@@ -43,3 +43,5 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 get_footer();
 
 ?>
+
+
