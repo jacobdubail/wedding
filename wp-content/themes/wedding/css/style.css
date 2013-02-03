@@ -448,7 +448,7 @@ h5 {
 .product_title {
   font-family: "proxima-nova", sans-serif;
   font-size: 16px;
-  margin-bottom: 0.705em; }
+  margin: 0 0 0.705em; }
 
 .single .product_title {
   font-size: 20px;

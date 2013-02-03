@@ -38,7 +38,7 @@ h5 {
 .product_title {
 	@include sans-serif;
 	font-size: 16px;
-	margin-bottom: $baselineheight/2;
+	margin: 0 0 $baselineheight/2;
 }
 
 .single .product_title {
