@@ -29,7 +29,7 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 
 	<div class="foxyshop_product_info col-1-2">
 
-		<h2><?php echo apply_filters('the_title', $product['name']); ?></h2>
+		<h2 class="product_title"><?php echo apply_filters('the_title', $product['name']); ?></h2>
 
 <?php
 	//Show a sale tag if the product is on sale

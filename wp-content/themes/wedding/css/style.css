@@ -444,6 +444,16 @@ h5 {
   font-weight: 400;
   font-family: "jaf-facitweb",sans-serif; }
 
+.foxyshop_related_product_list h2,
+.product_title {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 16px;
+  margin-bottom: 0.705em; }
+
+.single .product_title {
+  font-size: 20px;
+  margin: 0 0 1.41em; }
+
 a {
   text-decoration: none; }
 
