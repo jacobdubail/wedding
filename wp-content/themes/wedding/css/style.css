@@ -1157,6 +1157,9 @@ a {
       float: none;
       width: 100%; } }
 
+.gform_validation_container {
+  display: none !important; }
+
 .gform_fields {
   margin: 20px 0 0;
   padding: 0; }
