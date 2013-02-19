@@ -32,7 +32,7 @@ function addBackstretch() {
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0052.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0074.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0083.jpg",
-      "/wp-content/themes/wedding/i/bg/JacobDanielle_0091.jpg",
+      //"/wp-content/themes/wedding/i/bg/JacobDanielle_0091.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0097.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0108.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0115.jpg",
