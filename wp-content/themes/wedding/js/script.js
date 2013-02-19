@@ -26,6 +26,7 @@ n = getcolcount();
 function addBackstretch() {
   $bg.backstretch([
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0027.jpg",
+      "/wp-content/themes/wedding/i/bg/JacobDanielle_0189.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0031.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0035.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0052.jpg",
@@ -39,7 +40,6 @@ function addBackstretch() {
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0143.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0150.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0166.jpg",
-      "/wp-content/themes/wedding/i/bg/JacobDanielle_0189.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0191.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0198.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0206.jpg",
