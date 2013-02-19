@@ -752,7 +752,9 @@ a {
 .main-content {
   margin: 1.41em 0; }
   .main-content img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    width: 100%; }
 
 .foxyshop_product_list {
   padding: 5px 0 0; }
