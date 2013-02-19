@@ -6,7 +6,7 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 */ ?>
 
 <?php //foxyshop_include('header'); ?>
-<div id="foxyshop_container">
+<div id="foxyshop_container" class="grid">
 <?php
 global $foxyshop_prettyphoto_included;
 	
@@ -17,32 +17,17 @@ global $foxyshop_prettyphoto_included;
 	//Just for the widget, since url links are no longer available
 	global $foxyshop_skip_url_link;
 	$foxyshop_skip_url_link = 1;
-	
-	//This is for testing to see what is included in the $product array
-	//print_r($product);
-	
-	//Initialize Form
+
 	foxyshop_start_form();
 	
 	
-	//Write Breadcrumbs
-	//foxyshop_breadcrumbs(" &raquo; ", "&laquo; Back to Products");
-	
-
-	//Shows Main Image and Optional Slideshow
-	//Available Built-in Options: prettyPhoto (lightbox), cloud-zoom (inline zooming)
-	//Second arg writes css and js includes on page
-	//If you want to make more customizations, you can grab the code from helperfunctions.php line ~650 and paste here
-	//-------------------------------------------------------------------------------------------------------------------------
 	foxyshop_build_image_slideshow("prettyPhoto", true);
-	//foxyshop_build_image_slideshow("cloud-zoom", true);
-	//foxyshop_build_image_slideshow("colorbox", true); //only recommended for 0.7.2+
 
 
 
 	//Main Product Information Area
-	echo '<div class="foxyshop_product_info">';
-	echo '<h2>' . apply_filters('the_title', $product['name']) . '</h2>';
+	echo '<div class="foxyshop_product_info col-1-2">';
+	//echo '<h2>' . apply_filters('the_title', $product['name']) . '</h2>';
 	
 	//Show a sale tag if the product is on sale
 	//if (foxyshop_is_on_sale()) echo '<p>SALE!</p>';

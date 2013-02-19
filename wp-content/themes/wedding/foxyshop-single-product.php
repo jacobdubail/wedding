@@ -13,16 +13,12 @@ This will allow you to upgrade FoxyShop without breaking your customizations. Mo
 <?php
 	while (have_posts()) : the_post();
 
-	//Initialize Product
 	global $product;
 	$product = foxyshop_setup_product();
 
-	//Initialize Form
 	foxyshop_start_form();
 
 	foxyshop_build_image_slideshow("prettyPhoto", true);
-	//foxyshop_build_image_slideshow("cloud-zoom", true);
-	//foxyshop_build_image_slideshow("colorbox", true); //only recommended for 0.7.2+
 
 ?>
 
