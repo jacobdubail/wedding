@@ -63,7 +63,7 @@
     wp_register_script('wedding_plugins', '/wp-content/themes/wedding/js/plugins.min.js', array('jquery'), '1', true );
     wp_enqueue_script('wedding_plugins');
 
-    wp_register_script('wedding_functions', '/wp-content/themes/wedding/js/script.min.js', array('jquery', 'wedding_plugins'), '1', true );
+    wp_register_script('wedding_functions', '/wp-content/themes/wedding/js/script.min.js', array('jquery', 'wedding_plugins'), '1.1', true );
     wp_enqueue_script('wedding_functions');
 
     wp_register_style('wedding_styles', '/wp-content/themes/wedding/css/style.css', '', '1.1', 'all');
