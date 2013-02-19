@@ -139,6 +139,7 @@ a {
     }
     @include breakpoint(snail) {
       font-size: 44px;
+      padding-top: 60px;
     }
   }
   h2 {
