@@ -15,8 +15,8 @@
   <meta name="google-site-verification" content="">
   <meta name="viewport" content="width=device-width">
 
-  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/i/favicon.ico">
-  <link rel="shortcut" href="<?php echo get_template_directory_uri(); ?>/i/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut" href="/favicon.png">
 
   <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.min.js"></script>
 
