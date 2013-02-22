@@ -25,7 +25,6 @@ n = getcolcount();
 
 function addBackstretch() {
   $bg.backstretch([
-      "/wp-content/themes/wedding/i/bg/JacobDanielle_0027.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0189.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0330.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0035.jpg",
@@ -37,7 +36,7 @@ function addBackstretch() {
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0052.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0115.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0289.jpg",
-      "/wp-content/themes/wedding/i/bg/JacobDanielle_0143.jpg",
+      "/wp-content/themes/wedding/i/bg/JacobDanielle_0027.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0150.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0281.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0191.jpg",
@@ -49,6 +48,7 @@ function addBackstretch() {
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0232.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0283.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0287.jpg",
+      "/wp-content/themes/wedding/i/bg/JacobDanielle_0143.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0166.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0074.jpg",
       "/wp-content/themes/wedding/i/bg/JacobDanielle_0318.jpg",
