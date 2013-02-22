@@ -195,6 +195,10 @@ a {
       top: 28px;
     }
 
+    .home.admin-bar & {
+      top: 0;
+    }
+
     &:before {
       content: 'x';
     }

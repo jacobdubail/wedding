@@ -726,6 +726,8 @@ a {
     z-index: 501; }
     .admin-bar #content_toggle a {
       top: 28px; }
+    .home.admin-bar #content_toggle a {
+      top: 0; }
     #content_toggle a:before {
       content: 'x'; }
     #content_toggle a.active:before {
