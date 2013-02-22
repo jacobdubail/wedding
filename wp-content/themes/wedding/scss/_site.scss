@@ -212,11 +212,13 @@ a {
       background: lighten( $heading, 20% );
       color: #fff;
     }
-
+    
+    .home.admin-bar .content_toggle &,
     .content_toggle & {
       top: 5px;
       right: 5px;
     }
+    
   }
 
   @include breakpoint(meerkat) {

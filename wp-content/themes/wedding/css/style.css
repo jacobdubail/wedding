@@ -735,7 +735,7 @@ a {
     #content_toggle a:hover {
       background: #99c3cc;
       color: #fff; }
-    .content_toggle #content_toggle a {
+    .home.admin-bar .content_toggle #content_toggle a, .content_toggle #content_toggle a {
       top: 5px;
       right: 5px; }
   @media (max-width: 768px) {
