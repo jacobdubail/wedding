@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width">
 
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/i/favicon.ico">
-  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/i/apple-touch-icon.png">
+  <link rel="shortcut" href="<?php echo get_template_directory_uri(); ?>/i/favicon.png">
 
   <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.min.js"></script>
 
