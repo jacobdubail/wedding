@@ -541,6 +541,9 @@ ul.hearts > li {
     zoom: 1;
     *display: inline;
     width: auto; }
+    @media (max-width: 900px) {
+      .main-nav li {
+        width: 33.3%; } }
     .main-nav li a {
       display: block;
       margin: 0 10px;

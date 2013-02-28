@@ -33,6 +33,10 @@
     @include inline-block;
     width: auto;
 
+    @include breakpoint(hyena) {
+      width: 33.3%;
+    }
+
     a {
       display: block;
       margin: 0 10px;
