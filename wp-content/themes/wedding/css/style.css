@@ -543,7 +543,7 @@ ul.hearts > li {
     width: auto; }
     @media (max-width: 900px) {
       .main-nav li {
-        width: 33.3%; } }
+        width: 30%; } }
     .main-nav li a {
       display: block;
       margin: 0 10px;
@@ -648,7 +648,7 @@ a {
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-    @media (max-width: 1024px) {
+    @media (max-width: 900px) {
       .page-wrap .centered {
         padding-top: 90px; } }
     @media (max-width: 768px) {

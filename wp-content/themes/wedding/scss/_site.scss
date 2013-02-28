@@ -92,7 +92,7 @@ a {
       @include transition(all .3s ease);
     }
     
-    @include breakpoint(zebra) {
+    @include breakpoint(hyena) {
       padding-top: 90px;
     }
     @include breakpoint(meerkat) {
