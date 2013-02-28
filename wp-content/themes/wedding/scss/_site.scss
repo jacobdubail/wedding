@@ -110,6 +110,10 @@ a {
   padding: 30px 0 0 140px;
   position: relative;
 
+  .home & {
+    padding: 150px 0 0 0;
+  }
+
   &:before {
     content: '';
     background: url(../images/logo_brown.jpg) no-repeat 0 0 transparent;
@@ -118,6 +122,10 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+
+    .home & {
+
+    }
   }
 
   h1 {
