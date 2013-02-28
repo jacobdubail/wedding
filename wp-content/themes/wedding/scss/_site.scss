@@ -98,7 +98,7 @@ a {
     @include breakpoint(meerkat) {
     //  @include opacity(1);
       width: 82%;
-      padding: 30px;
+      padding: 90px 30px 30px;
     };
 
     @include breakpoint(lizard) {
