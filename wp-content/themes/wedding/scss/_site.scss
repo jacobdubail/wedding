@@ -130,6 +130,11 @@ a {
     top: 0;
     left: 0;
 
+    @include breakpoint(lizard) {
+      left: 50%;
+      margin-left: -60px;
+    }
+
     .home & {
       left: 50%;
       margin-left: -60px;
