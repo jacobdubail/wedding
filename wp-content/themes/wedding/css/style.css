@@ -642,7 +642,8 @@ a {
     .no-boxshadow .page-wrap .centered {
       border: 1px solid #ababab; }
     .home .page-wrap .centered {
-      max-width: 550px; }
+      max-width: 550px;
+      padding-top: 30px; }
     body:hover .page-wrap .centered {
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
