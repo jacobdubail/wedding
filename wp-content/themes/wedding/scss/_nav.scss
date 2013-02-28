@@ -13,7 +13,7 @@
   ul {
     @include transition(all .3s ease);
     margin: 0 auto;
-    padding:0 3%;
+    padding:0;
     width: 75%;
     max-width: 1350px;
     background: rgba(255,255,255,0.9);
@@ -26,7 +26,6 @@
     }
     @include breakpoint(lizard) {
       width: 96%;
-      padding: 0;
     }
 
   }

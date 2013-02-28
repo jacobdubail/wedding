@@ -520,7 +520,7 @@ ul.hearts > li {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin: 0 auto;
-    padding: 0 3%;
+    padding: 0;
     width: 75%;
     max-width: 1350px;
     background: rgba(255, 255, 255, 0.9);
@@ -532,8 +532,7 @@ ul.hearts > li {
         width: 82%; } }
     @media (max-width: 600px) {
       .main-nav ul {
-        width: 96%;
-        padding: 0; } }
+        width: 96%; } }
   .main-nav li {
     display: -moz-inline-stack;
     display: inline-block;
