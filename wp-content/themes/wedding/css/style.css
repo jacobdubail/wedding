@@ -532,7 +532,8 @@ ul.hearts > li {
         width: 82%; } }
     @media (max-width: 600px) {
       .main-nav ul {
-        width: 96%; } }
+        width: 96%;
+        padding: 0; } }
   .main-nav li {
     display: -moz-inline-stack;
     display: inline-block;
@@ -558,6 +559,9 @@ ul.hearts > li {
       text-indent: 0; }
       .main-nav li a:hover {
         color: #619e98; }
+      @media (max-width: 600px) {
+        .main-nav li a {
+          padding: 0 5px; } }
     .main-nav li.current-menu-item a {
       background: #559caa;
       color: #fff;
@@ -642,6 +646,9 @@ a {
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
+    @media (max-width: 1024px) {
+      .page-wrap .centered {
+        padding-top: 90px; } }
     @media (max-width: 768px) {
       .page-wrap .centered {
         width: 82%;
@@ -683,6 +690,9 @@ a {
         color: #619e98; }
     .header h1 small {
       margin: 0 1px; }
+    @media (max-width: 1024px) {
+      .header h1 {
+        font-size: 60px; } }
     @media (max-width: 768px) {
       .header h1 {
         line-height: .6; }

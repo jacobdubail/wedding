@@ -91,7 +91,10 @@ a {
     //  @include opacity(1);
       @include transition(all .3s ease);
     }
-
+    
+    @include breakpoint(zebra) {
+      padding-top: 90px;
+    }
     @include breakpoint(meerkat) {
     //  @include opacity(1);
       width: 82%;
@@ -148,6 +151,9 @@ a {
     }
     small {
       margin: 0 1px;
+    }
+    @include breakpoint(zebra) {
+      font-size: 60px;
     }
     @include breakpoint(meerkat) {
       //text-align:center;
