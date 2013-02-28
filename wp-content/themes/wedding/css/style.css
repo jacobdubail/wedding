@@ -560,7 +560,7 @@ ul.hearts > li {
         color: #619e98; }
       @media (max-width: 600px) {
         .main-nav li a {
-          padding: 0 5px; } }
+          padding: 10px 5px; } }
     .main-nav li.current-menu-item a {
       background: #559caa;
       color: #fff;
