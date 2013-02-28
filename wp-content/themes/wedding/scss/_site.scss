@@ -107,12 +107,17 @@ a {
 
 .header {
   text-align: center;
-  padding-top: 10px;
+  padding: 30px 0 0 140px;
+  position: relative;
 
-  img {
-    max-width: 200px;
-    display: block;
-    margin: 0 auto 10px;
+  &:before {
+    content: '';
+    background: url(../images/logo_brown.jpg) no-repeat 0 0 transparent;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   h1 {

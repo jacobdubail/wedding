@@ -40,7 +40,6 @@
   <div class="page-wrap">
     <div class="centered">
       <header class="header">
-        <img src="<?php echo get_template_directory_uri(); ?>/i/logo.png" alt="Jacob and Danielle are getting married!">
         <?php if ( is_front_page() ) : ?>
           <h1>Danielle<small>&amp;</small>Jacob</h1>
         <?php else : ?>

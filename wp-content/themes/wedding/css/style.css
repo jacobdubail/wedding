@@ -652,11 +652,16 @@ a {
 
 .header {
   text-align: center;
-  padding-top: 10px; }
-  .header img {
-    max-width: 200px;
-    display: block;
-    margin: 0 auto 10px; }
+  padding: 30px 0 0 140px;
+  position: relative; }
+  .header:before {
+    content: '';
+    background: url(../images/logo_brown.jpg) no-repeat 0 0 transparent;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0; }
   .header h1 {
     font-size: 70px;
     font-weight: 700;
