@@ -655,7 +655,7 @@ a {
   padding: 30px 0 0 140px;
   position: relative; }
   .home .header {
-    padding: 150px 0 0 0; }
+    padding: 130px 0 0 0; }
   .header:before {
     content: '';
     background: url(../i/logo_black.png) no-repeat 0 0 transparent;
@@ -692,8 +692,7 @@ a {
           font-weight: 300; } }
     @media (max-width: 480px) {
       .header h1 {
-        font-size: 44px;
-        padding-top: 60px; } }
+        font-size: 44px; } }
   .header h2 {
     text-transform: uppercase;
     margin: 6px 0 10px;
