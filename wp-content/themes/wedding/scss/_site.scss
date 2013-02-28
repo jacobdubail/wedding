@@ -116,7 +116,7 @@ a {
 
   &:before {
     content: '';
-    background: url(../i/logo_brown.png) no-repeat 0 0 transparent;
+    background: url(../i/logo_black.png) no-repeat 0 0 transparent;
     width: 120px;
     height: 120px;
     position: absolute;
@@ -124,7 +124,8 @@ a {
     left: 0;
 
     .home & {
-
+      left: 50%;
+      margin-left: -60px;
     }
   }
 
