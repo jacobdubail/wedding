@@ -661,6 +661,9 @@ a {
   text-align: center;
   padding: 30px 0 0 140px;
   position: relative; }
+  @media (max-width: 600px) {
+    .header {
+      padding: 130px 0 0 0; } }
   .home .header {
     padding: 130px 0 0 0; }
   .header:before {
@@ -683,18 +686,12 @@ a {
     text-transform: lowercase;
     text-shadow: 0 1px 0 white;
     letter-spacing: -3px; }
-    .header h1 a {
-      text-decoration: none;
-      color: #559caa; }
-      .header h1 a:hover {
-        color: #619e98; }
-    .header h1 small {
-      margin: 0 1px; }
     @media (max-width: 1024px) {
       .header h1 {
         font-size: 60px; } }
     @media (max-width: 768px) {
       .header h1 {
+        font-size: 50px;
         line-height: .6; }
         .header h1 small {
           line-height: 1;
@@ -703,6 +700,13 @@ a {
     @media (max-width: 480px) {
       .header h1 {
         font-size: 44px; } }
+    .header h1 a {
+      text-decoration: none;
+      color: #559caa; }
+      .header h1 a:hover {
+        color: #619e98; }
+    .header h1 small {
+      margin: 0 1px; }
   .header h2 {
     text-transform: uppercase;
     margin: 6px 0 10px;
@@ -712,6 +716,9 @@ a {
     font-size: 34px;
     letter-spacing: 2px;
     word-spacing: 2px; }
+    @media (max-width: 1024px) {
+      .header h2 {
+        font-size: 30px; } }
     @media (max-width: 768px) {
       .header h2 {
         font-size: 22px;

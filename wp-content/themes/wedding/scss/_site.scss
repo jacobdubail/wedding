@@ -113,6 +113,10 @@ a {
   padding: 30px 0 0 140px;
   position: relative;
 
+  @include breakpoint(lizard) {
+    padding: 130px 0 0 0;
+  }
+
   .home & {
     padding: 130px 0 0 0;
   }
@@ -141,22 +145,12 @@ a {
     text-transform:lowercase;
     text-shadow: 0 1px 0 #fff;
     letter-spacing:-3px;
-    a {
-      text-decoration: none;
-      color: $heading;
 
-      &:hover {
-        color: $headingHover;
-      }
-    }
-    small {
-      margin: 0 1px;
-    }
     @include breakpoint(zebra) {
       font-size: 60px;
     }
     @include breakpoint(meerkat) {
-      //text-align:center;
+      font-size: 50px;
       line-height:.6;
       small {
         line-height:1;
@@ -168,13 +162,31 @@ a {
       font-size: 44px;
       //padding-top: 0px;
     }
+
+    a {
+      text-decoration: none;
+      color: $heading;
+
+      &:hover {
+        color: $headingHover;
+      }
+    }
+    small {
+      margin: 0 1px;
+    }
+    
   }
+
   h2 {
     text-transform:uppercase;
     margin: 6px 0 10px;
     color: hsl(190, 33%, 13%);
     text-shadow: 0 1px 0 white;
     @include facit();
+
+    @include breakpoint(zebra) {
+      font-size: 30px;
+    }
 
     @include breakpoint(meerkat) {
       font-size:22px;
