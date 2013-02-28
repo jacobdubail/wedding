@@ -128,15 +128,21 @@ a {
     width: 120px;
     height: 120px;
     position: absolute;
-    top: 0;
+    top: 15px;
     left: 0;
 
+    @include breakpoint(hyena) {
+      top: 5px;
+    }
+
     @include breakpoint(lizard) {
+      top: 0;
       left: 50%;
       margin-left: -60px;
     }
 
     .home & {
+      top: 0;
       left: 50%;
       margin-left: -60px;
     }
@@ -193,7 +199,9 @@ a {
     @include breakpoint(zebra) {
       font-size: 30px;
     }
-
+    @include breakpoint(hyena) {
+      font-size: 28px;
+    }
     @include breakpoint(meerkat) {
       font-size:22px;
       letter-spacing:0;
