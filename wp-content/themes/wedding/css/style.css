@@ -669,6 +669,26 @@ a {
       padding: 130px 0 0 0; } }
   .home .header {
     padding: 130px 0 0 0; }
+  .header:before {
+    content: '';
+    background: url(../i/logo_black.png) no-repeat 0 0 transparent;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 15px;
+    left: 0; }
+    @media (max-width: 900px) {
+      .header:before {
+        top: 5px; } }
+    @media (max-width: 600px) {
+      .header:before {
+        top: 0;
+        left: 50%;
+        margin-left: -60px; } }
+    .home .header:before {
+      top: 0;
+      left: 50%;
+      margin-left: -60px; }
   .header h1 {
     font-size: 70px;
     font-weight: 700;
@@ -678,26 +698,6 @@ a {
     text-transform: lowercase;
     text-shadow: 0 1px 0 white;
     letter-spacing: -3px; }
-    .header h1:before {
-      content: '';
-      background: url(../i/logo_black.png) no-repeat 0 0 transparent;
-      width: 120px;
-      height: 120px;
-      position: absolute;
-      top: 15px;
-      left: 0; }
-      @media (max-width: 900px) {
-        .header h1:before {
-          top: 5px; } }
-      @media (max-width: 600px) {
-        .header h1:before {
-          top: 0;
-          left: 50%;
-          margin-left: -60px; } }
-      .home .header h1:before {
-        top: 0;
-        left: 50%;
-        margin-left: -60px; }
     @media (max-width: 1024px) {
       .header h1 {
         font-size: 60px; } }
