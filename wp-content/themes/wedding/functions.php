@@ -66,7 +66,7 @@
     wp_register_script('wedding_functions', '/wp-content/themes/wedding/js/script.min.js', array('jquery', 'wedding_plugins'), '1.1', true );
     wp_enqueue_script('wedding_functions');
 
-    wp_register_style('wedding_styles', '/wp-content/themes/wedding/css/style.css', '', '1.2', 'all');
+    wp_register_style('wedding_styles', '/wp-content/themes/wedding/css/style.css', '', '1.21', 'all');
     wp_enqueue_style('wedding_styles');
 
   }
