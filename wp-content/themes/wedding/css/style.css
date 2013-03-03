@@ -497,7 +497,8 @@ ul.hearts > li {
     .no-unicode ul.hearts > li:before {
       display: none; }
   .no-unicode ul.hearts > li {
-    list-style: disc outside; }
+    list-style: disc outside;
+    padding-left: 5px; }
 
 .entry p:first-child {
   font-size: 110%; }
