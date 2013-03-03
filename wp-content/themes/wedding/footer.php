@@ -10,18 +10,16 @@
 
   </div>
 
-  <!-- <div id="controls">
-    <a href="#">&#9776;</a>
-    <ul>
-      <li title="Move slideshow left" class="left">left</li>
-      <li title="Resume slideshow" class="up">up</li>
-      <li title="Resume slideshow" class="down">down</li>
-      <li title="Move slideshow right" class="right">right</li>
-    </ul>
-  </div> -->
-
 <?php wp_footer(); ?>
 
-</body>
+<script>
 
+  var _gaq=[['_setAccount','UA-7871373-6'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+
+</script>
+
+</body>
 </html>
