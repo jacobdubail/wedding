@@ -494,6 +494,8 @@ ul.hearts > li {
     top: 4px;
     left: 0;
     text-shadow: 1px 1px 0 white; }
+    .no-unicode ul.hearts > li:before {
+      display: none; }
   .no-unicode ul.hearts > li {
     list-style: disc outside; }
 
