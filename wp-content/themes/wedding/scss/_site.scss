@@ -132,8 +132,12 @@ a {
     top: 15px;
     left: 0;
 
+    .home & {
+      @include opacity(1);
+    }
+
     @include breakpoint(hyena) {
-      top: 5px;
+      top: 5px; 
     }
 
     @include breakpoint(lizard) {

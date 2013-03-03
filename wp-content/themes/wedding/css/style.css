@@ -666,17 +666,22 @@ a {
   position: relative; }
   @media (max-width: 600px) {
     .header {
-      padding: 130px 0 0 0; } }
+      padding: 30px 0 0 0; } }
   .home .header {
     padding: 130px 0 0 0; }
   .header:before {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4;
     content: '';
-    background: url(../i/logo_black.png) no-repeat 0 0 transparent;
+    background: url(../i/logo_brown.png) no-repeat 0 0 transparent;
     width: 120px;
     height: 120px;
     position: absolute;
     top: 15px;
     left: 0; }
+    .home .header:before {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1; }
     @media (max-width: 900px) {
       .header:before {
         top: 5px; } }
