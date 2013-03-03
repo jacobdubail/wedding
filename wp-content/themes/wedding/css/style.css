@@ -494,6 +494,8 @@ ul.hearts > li {
     top: 4px;
     left: 0;
     text-shadow: 1px 1px 0 white; }
+  .no-unicode ul.hearts > li {
+    list-style: disc outside; }
 
 .entry p:first-child {
   font-size: 110%; }
@@ -527,6 +529,8 @@ ul.hearts > li {
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
     text-indent: 0; }
+    .no-boxshadow .main-nav ul {
+      border-bottom: 1px solid #dedede; }
     @media (max-width: 768px) {
       .main-nav ul {
         width: 82%; } }
@@ -696,7 +700,7 @@ a {
       margin-left: -60px; }
   .header h1 {
     font-size: 70px;
-    font-weight: 700;
+    font-weight: 900;
     margin: 0;
     line-height: .87;
     color: #559caa;

@@ -87,6 +87,10 @@ ul.hearts {
       left: 0;
       text-shadow:1px 1px 0 white;
     }
+
+    .no-unicode & {
+    	list-style: disc outside;
+    }
   }
 }
 

@@ -21,6 +21,10 @@
     box-shadow: 0 0 3px rgba(black, 0.35);
     text-indent: 0;
 
+    .no-boxshadow & {
+      border-bottom: 1px solid #dedede;
+    }
+
     @include breakpoint(meerkat) {
       width: 82%;
     }
