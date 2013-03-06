@@ -1,17 +1,16 @@
       </section>
 
-      <footer class="footer">
-        <p>
-          &copy; <?php echo date("Y"); ?> Danielle Hendrix &amp; Jacob Dubail. All Rights Reserved<br>
-          photo credit: <a href="http://andrialindquistblog.com/">Andria Lindquist</a>
-        </p>
-      </footer>
-
       <!-- <span id="content_toggle"><a href="#"></a></span> -->
 
     </div>
 
   </div>
+
+  <footer class="footer">
+    <p>
+      &copy; <?php echo date("Y"); ?> Danielle Hendrix &amp; Jacob Dubail. All rights reserved. Photo credit: <a href="http://andrialindquistblog.com/">Andria Lindquist</a>
+    </p>
+  </footer>
 
 <?php wp_footer(); ?>
 

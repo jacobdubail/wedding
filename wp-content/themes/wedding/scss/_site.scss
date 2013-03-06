@@ -288,32 +288,41 @@ a {
 
 .footer {
   display:none;
-  padding: 10px 5%;
-  margin: 0 -50px;
-  background: rgba(255,255,255,0.5);
-  -webkit-box-shadow: 0 0 3px rgba(black, 0.35);
-  box-shadow: 0 0 3px rgba(black, 0.35);
-  color: #7a7a7a;
+  // padding: 10px 5%;
+  // margin: 0 -50px;
+  // background: rgba(255,255,255,0.5);
+  // -webkit-box-shadow: 0 0 3px rgba(black, 0.35);
+  // box-shadow: 0 0 3px rgba(black, 0.35);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  color: #ccc;
   font-size: 12px;
   line-height: 1.2;
   text-align: center;
+
+  p {
+    margin: 0;
+    a {
+      color: #ccc;
+    }
+  }
+  
 
   @include breakpoint(meerkat) {
     margin: 0 -30px;
   }
 
-  .home & {
-    background: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
+  // .home & {
+  //   background: transparent;
+  //   -webkit-box-shadow: none;
+  //   box-shadow: none;
+  // }
 
-  p {
-    margin: 0;
-  }
-  a {
-    color: #7a7a7a;
-  }
+  
 }
 
 #credit {

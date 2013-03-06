@@ -801,26 +801,23 @@ a {
 
 .footer {
   display: none;
-  padding: 10px 5%;
-  margin: 0 -50px;
-  background: rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
-  color: #7a7a7a;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  color: #ccc;
   font-size: 12px;
   line-height: 1.2;
   text-align: center; }
+  .footer p {
+    margin: 0; }
+    .footer p a {
+      color: #ccc; }
   @media (max-width: 768px) {
     .footer {
       margin: 0 -30px; } }
-  .home .footer {
-    background: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
-  .footer p {
-    margin: 0; }
-  .footer a {
-    color: #7a7a7a; }
 
 #credit {
   background: transparent;
