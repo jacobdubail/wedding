@@ -662,7 +662,7 @@ a {
     @media (max-width: 768px) {
       .page-wrap .centered {
         width: 82%;
-        padding: 90px 30px 30px; } }
+        padding: 90px 30px 0; } }
     @media (max-width: 600px) {
       .page-wrap .centered {
         width: 96%; } }
