@@ -802,19 +802,19 @@ a {
 .footer {
   padding: 10px 5%;
   margin: 0 -50px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
-  color: #666;
-  font-size: 12px; }
+  color: #7a7a7a;
+  font-size: 12px;
+  text-align: center; }
   @media (max-width: 768px) {
     .footer {
       margin: 0 -30px; } }
   .home .footer {
     background: transparent;
     -webkit-box-shadow: none;
-    box-shadow: none;
-    border-top: 1px solid #999999; }
+    box-shadow: none; }
   .footer p {
     margin: 0; }
 
