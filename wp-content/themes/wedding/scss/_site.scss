@@ -287,7 +287,7 @@ a {
 
 
 .footer {
-  //display:none;
+  display:none;
   padding: 10px 5%;
   margin: 0 -50px;
   background: rgba(255,255,255,0.5);
@@ -310,6 +310,9 @@ a {
 
   p {
     margin: 0;
+  }
+  a {
+    color: #7a7a7a;
   }
 }
 
