@@ -1,10 +1,13 @@
       </section>
 
       <footer class="footer">
-        <small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
+        <p>
+          &copy; <?php echo date("Y"); ?> Jacob Dubail &amp; Danielle Hendrix. All Rights Reserved<br>
+          photo credit: <a href="http://andrialindquistblog.com/">Andria Lindquist</a>
+        </p>
       </footer>
 
-      <span id="content_toggle"><a href="#"></a></span>
+      <!-- <span id="content_toggle"><a href="#"></a></span> -->
 
     </div>
 
