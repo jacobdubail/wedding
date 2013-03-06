@@ -70,7 +70,7 @@ a {
     font-weight: 300;
     -webkit-box-shadow: 0 0 3px rgba(black, 0.35);
     box-shadow: 0 0 3px rgba(black, 0.35);
-    padding: 50px;
+    padding: 50px 50px 0;
     background: rgba(white, .8);
 
 
@@ -288,7 +288,16 @@ a {
 
 .footer {
   display:none;
+  padding: 10px 5%;
+  background: rgba(255,255,255,0.9);
+  -webkit-box-shadow: 0 0 3px rgba(black, 0.35);
+  box-shadow: 0 0 3px rgba(black, 0.35);
+
+  p {
+    margin: 0;
+  }
 }
+
 #credit {
   background: transparent;
   font-size: 12px;

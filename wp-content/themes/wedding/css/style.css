@@ -642,7 +642,7 @@ a {
     font-weight: 300;
     -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
-    padding: 50px;
+    padding: 50px 50px 0;
     background: rgba(255, 255, 255, 0.8); }
     .no-rgba .page-wrap .centered {
       background: url(../i/fff_80.png) repeat 0 0 transparent; }
@@ -800,7 +800,13 @@ a {
       display: none; } }
 
 .footer {
-  display: none; }
+  display: none;
+  padding: 10px 5%;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.35); }
+  .footer p {
+    margin: 0; }
 
 #credit {
   background: transparent;
