@@ -154,45 +154,41 @@ $(".entry img").parent().colorbox({
 });
 
 
+// $("body").on( 'keydown', function (event) {
 
+//     if ( event.keyCode === 37 ) { // left
+//       $(".left").addClass('hover');
+//     } else if ( event.keyCode === 39 ) { // right
+//       $(".right").addClass('hover');
+//     } else if ( event.keyCode === 38 || event.keyCode === 40 ) {
+//       $(".up,.down").addClass('hover');
+//     }
 
+// }).on('keyup', function() {
+//   var dir = null;
+//   $("#controls li").removeClass('hover');
+//   if ( event.keyCode === 37 ) { // left
+//       dir = 'left';
+//     } else if ( event.keyCode === 39 ) { // right
+//       dir = 'right';
+//     } else if ( event.keyCode === 38 || event.keyCode === 40 ) {
+//       dir = 'resume';
+//     }
 
-
-$("body").on( 'keydown', function (event) {
-
-    if ( event.keyCode === 37 ) { // left
-      $(".left").addClass('hover');
-    } else if ( event.keyCode === 39 ) { // right
-      $(".right").addClass('hover');
-    } else if ( event.keyCode === 38 || event.keyCode === 40 ) {
-      $(".up,.down").addClass('hover');
-    }
-
-}).on('keyup', function() {
-  var dir = null;
-  $("#controls li").removeClass('hover');
-  if ( event.keyCode === 37 ) { // left
-      dir = 'left';
-    } else if ( event.keyCode === 39 ) { // right
-      dir = 'right';
-    } else if ( event.keyCode === 38 || event.keyCode === 40 ) {
-      dir = 'resume';
-    }
-
-    if ( dir === 'left' ) {
-      $bg
-        .data('backstretch')
-        .pause()
-        .prev();
-    } else if ( dir === 'right' ) {
-      $bg
-        .data('backstretch')
-        .pause()
-        .next();
-    } else if ( dir === 'resume' ) {
-      $bg.data('backstretch').resume();
-    }
-});
+//     if ( dir === 'left' ) {
+//       $bg
+//         .data('backstretch')
+//         .pause()
+//         .prev();
+//     } else if ( dir === 'right' ) {
+//       $bg
+//         .data('backstretch')
+//         .pause()
+//         .next();
+//     } else if ( dir === 'resume' ) {
+//       $bg.data('backstretch').resume();
+//     }
+// });
 
 $("#content_toggle").on('click', 'a', function() {
   $(".page-wrap").toggleClass('content_toggle');

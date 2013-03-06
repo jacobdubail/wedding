@@ -669,7 +669,7 @@ a {
 
 .header {
   text-align: center;
-  padding: 30px 0 0 140px;
+  padding: 30px 0 0 0;
   position: relative; }
   @media (max-width: 600px) {
     .header {
@@ -726,7 +726,7 @@ a {
         font-size: 44px; } }
     .header h1 a {
       text-decoration: none;
-      color: #559caa; }
+      color: #447c88; }
       .header h1 a:hover {
         color: #619e98; }
     .header h1 small {

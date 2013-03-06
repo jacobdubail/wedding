@@ -111,7 +111,7 @@ a {
 
 .header {
   text-align: center;
-  padding: 30px 0 0 140px;
+  padding: 30px 0 0 0;
   position: relative;
 
   @include breakpoint(lizard) {
@@ -182,7 +182,7 @@ a {
 
     a {
       text-decoration: none;
-      color: $heading;
+      color: darken( $heading, 10% );
 
       &:hover {
         color: $headingHover;
