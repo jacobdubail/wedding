@@ -1,16 +1,24 @@
       </section>
 
-      <!-- <span id="content_toggle"><a href="#"></a></span> -->
+      <?php if ( is_front_page() ) : ?>
+        <footer class="footer">
+          <p>
+            &copy; <?php echo date("Y"); ?> Danielle Hendrix &amp; Jacob Dubail. All rights reserved. Photo credit: <a href="http://andrialindquistblog.com/">Andria Lindquist</a>
+          </p>
+        </footer>
+      <?php endif; ?>
 
     </div>
 
   </div>
 
+<?php if ( !is_front_page() ) : ?>
   <footer class="footer">
     <p>
       &copy; <?php echo date("Y"); ?> Danielle Hendrix &amp; Jacob Dubail. All rights reserved. Photo credit: <a href="http://andrialindquistblog.com/">Andria Lindquist</a>
     </p>
   </footer>
+<?php endif; ?>
 
 <?php wp_footer(); ?>
 
