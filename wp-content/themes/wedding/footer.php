@@ -3,7 +3,7 @@
       <?php if ( !is_front_page() ) : ?>
         <footer class="footer">
           <p>
-            &copy; <?php echo date("Y"); ?> Danielle Hendrix &amp; Jacob Dubail. All rights reserved. Photo credit: <a href="http://andrialindquistblog.com/">Andria Lindquist</a>
+            &copy; <?php echo date("Y"); ?> Danielle Hendrix &amp; Jacob Dubail. All rights reserved. Background photo credit: <a href="http://andrialindquistblog.com/">Andria Lindquist</a>
           </p>
         </footer>
       <?php endif; ?>
@@ -15,7 +15,7 @@
 <?php if ( is_front_page() ) : ?>
   <footer class="footer">
     <p>
-      &copy; <?php echo date("Y"); ?> Danielle Hendrix &amp; Jacob Dubail. All rights reserved. Photo credit: <a href="http://andrialindquistblog.com/">Andria Lindquist</a>
+      &copy; <?php echo date("Y"); ?> Danielle Hendrix &amp; Jacob Dubail. All rights reserved. Background photo credit: <a href="http://andrialindquistblog.com/">Andria Lindquist</a>
     </p>
   </footer>
 <?php endif; ?>
