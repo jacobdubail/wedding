@@ -287,11 +287,18 @@ a {
 
 
 .footer {
-  display:none;
+  //display:none;
   padding: 10px 5%;
+  margin: 0 -50px;
   background: rgba(255,255,255,0.9);
   -webkit-box-shadow: 0 0 3px rgba(black, 0.35);
   box-shadow: 0 0 3px rgba(black, 0.35);
+  color: #666;
+  font-size: 13px;
+
+  @include breakpoint(meerkat) {
+    margin: 0 -30px;
+  }
 
   p {
     margin: 0;
