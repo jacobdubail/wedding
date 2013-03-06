@@ -2,7 +2,7 @@
 
       <footer class="footer">
         <p>
-          &copy; <?php echo date("Y"); ?> Jacob Dubail &amp; Danielle Hendrix. All Rights Reserved<br>
+          &copy; <?php echo date("Y"); ?> Danielle Hendrix &amp; Jacob Dubail. All Rights Reserved<br>
           photo credit: <a href="http://andrialindquistblog.com/">Andria Lindquist</a>
         </p>
       </footer>
